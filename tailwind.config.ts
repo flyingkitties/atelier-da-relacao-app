@@ -12,6 +12,7 @@ const config: Config = {
         lightColor: '#FFFBF5',
         darkColor: '#F7EFE5',
         blueColor: '#BFC9CA',
+        greenColor: '#b2d8d8',
       },
       backgroundImage: {},
     },
