@@ -2,6 +2,42 @@
 @tailwind components;
 @tailwind utilities;
 
+.wave {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  background: url('../public/wave.png');
+  background-size: 1000px 100px;
+  animation: animate 4s ease-in-out infinite;
+  animation-delay: calc(var(--i) * 0.25s);
+}
+
+.wave#wave1 {
+  z-index: 1000;
+  opacity: 1;
+  background-position-x: 400px;
+}
+
+/* Add media queries for responsiveness */
+@media (min-width: 640px) {
+  .wave#wave1 {
+    background-position-x: 600px;
+  }
+}
+
+/* ... Add similar rules for other waves ... */
+
+@keyframes animate {
+  0%,
+  100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(10px);
+  }
+}
 @layer components {
   .button1 {
     @apply border-2 border-greenColor rounded-3xl py-1 px-3 sm:px-5 text-xs sm:text-sm lg:text-base;

@@ -1,3 +1,4 @@
+import AboutUs from '@/components/AboutUs';
 import Banner from '@/components/Banner';
 import Header from '@/components/Header';
 import Image from 'next/image';
@@ -7,7 +8,9 @@ export default function Home() {
     <main className="">
       <Header />
       <Banner />
-      <section></section>
+      <section>
+        <AboutUs />
+      </section>
     </main>
   );
 }
