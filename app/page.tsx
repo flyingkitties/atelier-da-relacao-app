@@ -1,9 +1,10 @@
+import Header from '@/components/Header';
 import Image from 'next/image';
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen ">
-      <h1>Atelier da relacao</h1>
+    <main className="">
+      <Header />
     </main>
   );
 }
