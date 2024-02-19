@@ -6,6 +6,7 @@
   position: absolute;
   bottom: 0;
   left: 0;
+  right: 0;
   width: 100%;
   height: 100px;
   background: url('../public/wave.png');
@@ -15,9 +16,19 @@
 }
 
 .wave#wave1 {
-  z-index: 1000;
+  z-index: 3;
   opacity: 1;
   background-position-x: 400px;
+}
+.wave#wave2 {
+  z-index: 2;
+  opacity: 0.5;
+  background-position-x: 300px;
+}
+.wave#wave3 {
+  z-index: 1;
+  opacity: 0.2;
+  background-position-x: 200px;
 }
 
 /* Add media queries for responsiveness */
@@ -35,7 +46,7 @@
     transform: translateY(0px);
   }
   50% {
-    transform: translateY(10px);
+    transform: translateY(5px);
   }
 }
 @layer components {
