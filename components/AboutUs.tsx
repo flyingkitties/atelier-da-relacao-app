@@ -7,8 +7,8 @@ function AboutUs() {
   return (
     <div className="py-12 px-5 md:px-[10%]">
       {/* Title */}
-      <div className="flex items-center justify-center py-5">
-        <h2 className="text-lg font-semibold">Sobre nós</h2>
+      <div className="flex items-center justify-center py-5 ">
+        <h2 className="text-lg font-semibold ">Sobre nós</h2>
       </div>
 
       {/* text */}
@@ -32,6 +32,11 @@ function AboutUs() {
           internalização de um novo olhar sobre si. Recriar condições para
           reescrever a história de cada um através deste espaço terapêutico.
         </p>
+        <Image
+          className="lg:hidden"
+          src={image1}
+          alt="Atelier photo depicting chair and table"
+        />
         <p>
           “…ensina-me a ser gente, sentir as minhas emoções, ter sentimentos,
           pensar os meus pensamentos, ter pensamento; ser sujeito, reconhecer-me
@@ -41,11 +46,6 @@ function AboutUs() {
           E porque a vida é movimento e a vida mental é criatividade, surge o
           nosso, e agora o vosso, Atelier.
         </p>
-        <Image
-          className="lg:hidden"
-          src={image1}
-          alt="Atelier photo depicting chair and table"
-        />
       </div>
     </div>
   );

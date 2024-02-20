@@ -14,7 +14,9 @@ const config: Config = {
         blueColor: '#BFC9CA',
         greenColor: '#b2d8d8',
       },
-      backgroundImage: {},
+      backgroundImage: {
+        image2: "url('/image2.jpg')",
+      },
     },
   },
   plugins: [],
