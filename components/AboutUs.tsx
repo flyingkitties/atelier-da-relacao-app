@@ -1,20 +1,20 @@
 'use client';
 import Image from 'next/image';
 import React, { useEffect } from 'react';
-import image1 from '../public/Image1.jpg';
+import image1 from '../public/Image1.webp';
 
 function AboutUs() {
   return (
-    <div className="py-12 px-5 md:px-[10%]">
+    <div className="py-12 px-5 md:px-[10%] 2xl:px-[20%] 2xl:my-[3%]">
       {/* Title */}
-      <div className="flex items-center justify-center py-5 ">
+      <div className="flex items-center justify-center py-2 md:py-5 ">
         <h2 className="text-lg font-semibold ">Sobre nós</h2>
       </div>
 
       {/* text */}
-      <div className="space-y-5 py-5 text-justify text-sm md:text-base">
+      <div className="space-y-5 py-2 md:py-5 text-justify text-sm md:text-base xl:text-lg">
         <Image
-          className="hidden lg:inline-flex lg:float-right lg:max-w-[400px] xl:max-w-[500px] h-auto lg:pl-5 pt-5"
+          className="hidden lg:inline-flex lg:float-right lg:max-w-[400px] xl:max-w-[450px] h-auto lg:pl-5 pt-5"
           src={image1}
           alt="Atelier photo depicting chair and table"
         />

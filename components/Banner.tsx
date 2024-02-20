@@ -19,10 +19,14 @@ function Banner() {
         <button className="button1">Serviços</button>
         <button className="button1">Equipa</button>
         <button className="button1">Onde estamos</button>
-        <button className="button1 bg-greenColor text-white">Marcações</button>
+        <button className="button1 bg-greenColor text-white ">
+          <p className="drop-shadow-[0_0.5px_0.5px_rgba(0,0,0,0.5)]">
+            Marcações
+          </p>
+        </button>
       </div>
       <Image
-        className="my-2 sm:my-5 px-5 sm:px-[20%] lg:px-[25%] xl:px-[30%] sm:mx-[20%] w-full h-auto pb-[30%] md:pb-[20%]"
+        className="my-2 sm:my-5 sm:mx-[20%] px-5 sm:px-[20%]  lg:px-[25%] xl:px-[30%]  w-full h-auto pb-[30%] md:pb-[20%] lg:pb-[12%]"
         src={logo}
         alt="Atelier da relacao logo"
       />

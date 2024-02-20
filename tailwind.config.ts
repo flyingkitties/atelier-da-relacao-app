@@ -15,7 +15,7 @@ const config: Config = {
         greenColor: '#b2d8d8',
       },
       backgroundImage: {
-        image2: "url('/image2.jpg')",
+        image2: "url('/image2.avif')",
       },
     },
   },
