@@ -4,6 +4,7 @@ import Header from '@/components/Header';
 import Services from '@/components/Services';
 import Team from '@/components/Team';
 import WhereWeAre from '@/components/WhereWeAre';
+import Appointments from '@/components/Appointments';
 import Image from 'next/image';
 
 export default function Home() {
@@ -19,6 +20,9 @@ export default function Home() {
       </section>
       <section>
         <Team />
+      </section>
+      <section>
+        <Appointments />
       </section>
       <section>
         <WhereWeAre />
