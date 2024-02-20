@@ -2,7 +2,7 @@ import Link from 'next/link';
 import React from 'react';
 import { FaFacebook } from 'react-icons/fa';
 import { FaInstagram } from 'react-icons/fa';
-import { CiFacebook } from 'react-icons/ci';
+import { RiFacebookCircleLine } from 'react-icons/ri';
 
 function Header() {
   return (
@@ -19,7 +19,7 @@ function Header() {
           href="https://www.facebook.com/atelierdarelacao"
           className="p-1 bg-greenColor rounded-full"
         >
-          <CiFacebook className="h-6 w-6 xl:h-8 xl:w-8 text-white" />
+          <RiFacebookCircleLine className="h-6 w-6 xl:h-8 xl:w-8 text-white" />
         </Link>
         <Link
           href="https://www.instagram.com/atelierdarelacao"
