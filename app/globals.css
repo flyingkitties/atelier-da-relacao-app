@@ -1,59 +1,63 @@
+/* @import url('https://db.onlinewebfonts.com/c/20e9fce1ca54ce1d7b7a7329de9bdaef?family=Gistesy'); */
+/* @import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@100..900&display=swap'); */
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-.wave {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  width: 100%;
-  height: 100px;
-  background: url('../public/wave.png');
-  background-size: 1000px 100px;
-  animation: animate 4s ease-in-out infinite;
-  animation-delay: calc(var(--i) * 0.25s);
-}
-
-.wave#wave1 {
-  z-index: 3;
-  opacity: 1;
-  background-position-x: 400px;
-}
-.wave#wave2 {
-  z-index: 2;
-  opacity: 0.5;
-  background-position-x: 300px;
-}
-.wave#wave3 {
-  z-index: 1;
-  opacity: 0.2;
-  background-position-x: 200px;
-}
-
-/* Add media queries for responsiveness */
-@media (min-width: 640px) {
-  .wave#wave1 {
-    background-position-x: 600px;
-  }
-}
-
-/* ... Add similar rules for other waves ... */
-
-@keyframes animate {
-  0%,
-  100% {
-    transform: translateY(0px);
-  }
-  50% {
-    transform: translateY(5px);
-  }
-}
 @layer components {
   .button1 {
     @apply border-2 border-greenColor rounded-3xl py-1 px-3 sm:px-5 text-xs sm:text-sm lg:text-base;
   }
   .serviceTiles {
     @apply min-w-full mx-[5%] py-4 px-3 border-2 border-white text-white rounded-lg text-center shadow-xl z-50;
+  }
+}
+
+@layer utilities {
+  .wave {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100px;
+    background: url('../public/wave.png');
+    background-size: 1000px 100px;
+    animation: animate 4s ease-in-out infinite;
+    animation-delay: calc(var(--i) * 0.25s);
+  }
+  .wave#wave1 {
+    z-index: 3;
+    opacity: 1;
+    background-position-x: 400px;
+  }
+  .wave#wave2 {
+    z-index: 2;
+    opacity: 0.5;
+    background-position-x: 300px;
+  }
+  .wave#wave3 {
+    z-index: 1;
+    opacity: 0.2;
+    background-position-x: 200px;
+  }
+
+  /* Add media queries for responsiveness */
+  @media (min-width: 640px) {
+    .wave#wave1 {
+      background-position-x: 600px;
+    }
+  }
+
+  /* ... Add similar rules for other waves ... */
+  @keyframes animate {
+    0%,
+    100% {
+      transform: translateY(0px);
+    }
+    50% {
+      transform: translateY(5px);
+    }
   }
 }

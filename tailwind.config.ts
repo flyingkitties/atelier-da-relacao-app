@@ -7,6 +7,10 @@ const config: Config = {
     './app/**/*.{js,ts,jsx,tsx,mdx}',
   ],
   theme: {
+    fontFamily: {
+      franklin: ['var(--font-libre-franklin)'],
+      gistesy: ['var(--font-gistesy)'],
+    },
     extend: {
       colors: {
         lightColor: '#FFFBF5',
