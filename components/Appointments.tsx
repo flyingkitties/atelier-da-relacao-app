@@ -23,47 +23,44 @@ function Appointments() {
   return (
     <div className="py-12 px-5 md:px-[10%] 2xl:px-[20%] 2xl:my-[3%] bg-greenColor">
       {/* Title */}
-      <div className="flex items-center justify-center py-2 md:py-5 ">
+      <div className="flex items-center justify-center py-2 md:py-5 mb-[5%]">
         <h2 className="text-lg font-semibold text-white">Marcações</h2>
       </div>
-      {/* Form
       <form
         onSubmit={handleSubmit(onSubmit)}
-        className=" flex flex-col px-5 space-y-5 "
+        className=" flex flex-col px-5 space-y-5 text-sm"
       >
-        <div className="flex flex-col sm:flex-row sm:space-x-2  ">
-          <input
-            {...register('name')}
-            placeholder="Name"
-            className="contactInput mb-5 sm:mb-0  "
-            type="text"
-          />
-          <input
-            {...register('email')}
-            placeholder="Email"
-            className="contactInput"
-            type="email"
-          />
-        </div>
+        <input
+          {...register('name')}
+          placeholder="Name"
+          className="formInput"
+          type="text"
+        />
+        <input
+          {...register('email')}
+          placeholder="Email"
+          className="formInput"
+          type="email"
+        />
 
         <input
           {...register('subject')}
           placeholder="Subject"
-          className="contactInput"
+          className="formInput"
           type="text"
         />
         <textarea
           {...register('message')}
           placeholder="Message"
-          className="contactInput"
+          className="formInput min-h-[100px]"
         />
         <button
           type="submit"
-          className="bg-[#f7ab0a]/60 py-3 rounded-lg text-[rgb(48,48,48)] font-bold hover:bg-[#f7ab0a]/70"
+          className="bg-darkGreenColor py-3 rounded-lg text-white font-bold hover:bg-[#f7ab0a]/70"
         >
           Submit
         </button>
-      </form> */}
+      </form>
     </div>
   );
 }

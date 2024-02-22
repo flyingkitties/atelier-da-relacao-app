@@ -6,11 +6,17 @@
 @tailwind utilities;
 
 @layer components {
+  /* Buttons */
   .button1 {
     @apply border-2 border-greenColor rounded-3xl py-1 px-3 sm:px-5 text-xs sm:text-sm lg:text-base;
   }
+  /* Tiles */
   .serviceTiles {
     @apply min-w-full mx-[5%] py-4 px-3 border-2 border-white text-white rounded-lg text-center shadow-xl z-50;
+  }
+  /* Appointments Section */
+  .formInput {
+    @apply p-2 rounded-lg;
   }
 }
 

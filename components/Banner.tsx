@@ -17,13 +17,14 @@ function Banner() {
   return (
     <div className="relative top-10 flex flex-col items-center justify-center text-gray-700 bg-gradient-to-b from-white to-greenColor">
       <NavHeader />
-      <div className="flex flex-col mb-[20%] items-center justify-center">
+      <div className="flex flex-col mt-3 mb-[20%] md:mb-[15%] lg:mb-[10%] items-center justify-center">
         <LogoSvg />
+
         <div>
-          <h1 className="uppercase font-franklin pt-5 pb-2 text-xl md:text-2xl lg:text-3xl text-center">
+          <h1 className="uppercase font-franklin pt-5 pb-2 text-2xl md:text-3xl xl:text-4xl text-center">
             Atelier da relação
           </h1>
-          <h2 className="font-gistesy text-xl md:text-2xl lg:text-3xl text-center">
+          <h2 className="font-gistesy text-2xl md:text-3xl xl:text-4xl text-center">
             {' '}
             Psicologia Clínica e Psicoterapia
           </h2>

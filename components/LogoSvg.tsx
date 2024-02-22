@@ -2,6 +2,7 @@ import * as React from 'react';
 import {
   SVGMotionProps,
   motion,
+  stagger,
   useMotionValue,
   useTransform,
 } from 'framer-motion';
@@ -15,14 +16,13 @@ function LogoSvg(props: SVGMotionProps<SVGSVGElement>) {
         pathLength: 1,
         opacity: 1,
         transition: {
-          delayChildren: 1,
           pathLength: {
             delay,
             type: 'spring',
-            duration: 1.5,
+            duration: 0.8,
             bounce: 0,
           },
-          opacity: { delay, duration: 0.5 },
+          opacity: { delay, duration: 0.8 },
         },
       };
     },
@@ -30,6 +30,7 @@ function LogoSvg(props: SVGMotionProps<SVGSVGElement>) {
 
   return (
     <motion.svg
+      className="max-w-40 md:max-w-48 lg:max-w-52 xl:max-w-60 h-auto"
       initial="hidden"
       animate="visible"
       xmlns="http://www.w3.org/2000/svg"
@@ -95,7 +96,7 @@ function LogoSvg(props: SVGMotionProps<SVGSVGElement>) {
         transform="matrix(-0.548771, -0.511225, 0.511225, -0.548771, 333.361739, 140.852012)"
         fill="none"
         strokeLinejoin="miter"
-        d="M 0.0018552 1.999299 L 271.476325 2.000597 "
+        d="M 271.476325 2.000597 L  0.0018552 1.999299 "
         stroke="#000000"
         strokeWidth={4}
         strokeOpacity={1}
@@ -109,7 +110,7 @@ function LogoSvg(props: SVGMotionProps<SVGSVGElement>) {
         transform="matrix(0.00028564, 0.75, -0.75, 0.00028564, 335.845295, 36.004117)"
         fill="none"
         strokeLinejoin="miter"
-        d="M -0.00104413 2.00206 L 139.702101 1.997975 "
+        d="M 139.702101 1.997975 L -0.00104413 2.00206"
         stroke="#000000"
         strokeWidth={4}
         strokeOpacity={1}
@@ -123,7 +124,7 @@ function LogoSvg(props: SVGMotionProps<SVGSVGElement>) {
         transform="matrix(0.749991, 0.00376582, -0.00376582, 0.749991, 186.489455, 36.000023)"
         fill="none"
         strokeLinejoin="miter"
-        d="M -0.0019401 2.000004 L 199.162036 1.999984 "
+        d="M 199.162036 1.999984 L -0.0019401 2.000004"
         stroke="#000000"
         strokeWidth={4}
         strokeOpacity={1}
