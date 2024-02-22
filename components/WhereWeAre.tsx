@@ -14,10 +14,13 @@ function WhereWeAre() {
           loading="lazy"
         ></iframe>
         <div className="flex flex-col items-center justify-center space-y-5">
-          <p>Rua Francisco de Holanda, Nº22, R/C Direito. Lisboa</p>
           <p>
-            (Próximo da estação de metro de Entrecampos e do Hospital Santa
-            Maria)
+            <span className="font-bold">Morada:</span> Rua Francisco de Holanda,
+            Nº22, R/C Direito. Lisboa
+          </p>
+          <p>
+            <span className="font-bold">Como chegar:</span> Próximo da estação
+            de metro de Entrecampos e do Hospital Santa Maria
           </p>
         </div>
       </div>

@@ -37,12 +37,7 @@ function NavHeader() {
       >
         <button className="button1">Equipa</button>
       </Link>
-      <Link
-        href="#location"
-        onClick={(e) => {
-          scrollSmooth(e, 'location');
-        }}
-      >
+      <Link href="#location">
         <button className="button1">Onde estamos</button>
       </Link>
       <Link
