@@ -3,6 +3,7 @@ import React from 'react';
 import { FaFacebook } from 'react-icons/fa';
 import { FaInstagram } from 'react-icons/fa';
 import { RiFacebookCircleLine } from 'react-icons/ri';
+import { SlLocationPin } from 'react-icons/sl';
 
 function Header() {
   return (
@@ -14,18 +15,28 @@ function Header() {
         </p>
       </div>
       {/* nav */}
-      <nav className="flex items-center space-x-5">
+      <nav className="flex items-center space-x-2 sm:space-x-5">
         <Link
           href="https://www.facebook.com/atelierdarelacao"
-          className="p-1 bg-greenColor rounded-full"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="p-[6px] bg-darkGreenColor rounded-full"
         >
           <RiFacebookCircleLine className="h-6 w-6 xl:h-8 xl:w-8 text-white" />
         </Link>
         <Link
           href="https://www.instagram.com/atelierdarelacao"
-          className="p-1 bg-greenColor rounded-full"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="p-2 bg-darkGreenColor rounded-full"
         >
-          <FaInstagram className="h-6 w-6 xl:h-8 xl:w-8 text-white" />
+          <FaInstagram className="h-5 w-5 xl:h-7 xl:w-7 text-white" />
+        </Link>
+        <Link
+          href="#location"
+          className="p-2 bg-darkGreenColor rounded-full"
+        >
+          <SlLocationPin className="h-5 w-5 xl:h-7 xl:w-7 text-white" />
         </Link>
       </nav>
     </div>

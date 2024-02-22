@@ -17,7 +17,8 @@ const config: Config = {
         darkColor: '#F7EFE5',
         blueColor: '#BFC9CA',
         greenColor: '#b2d8d8',
-        darkGreenColor: '#008080',
+        // darkGreenColor: '#008080',
+        darkGreenColor: '#006666',
       },
       backgroundImage: {
         image2: "url('/Image2.avif')",

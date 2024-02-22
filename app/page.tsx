@@ -9,22 +9,25 @@ import Image from 'next/image';
 
 export default function Home() {
   return (
-    <main className="">
+    <main className="h-screen snap-y snap-mandatory overflow-y-scroll">
       <Header />
       <Banner />
-      <section>
+      <section
+        id="aboutUs"
+        className="snap"
+      >
         <AboutUs />
       </section>
-      <section>
+      <section id="services">
         <Services />
       </section>
-      <section>
+      <section id="team">
         <Team />
       </section>
-      <section>
+      <section id="appointments">
         <Appointments />
       </section>
-      <section>
+      <section id="location">
         <WhereWeAre />
       </section>
     </main>

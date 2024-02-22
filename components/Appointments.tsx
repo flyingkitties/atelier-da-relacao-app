@@ -21,14 +21,15 @@ function Appointments() {
   };
 
   return (
-    <div className="py-12 px-5 md:px-[10%] 2xl:px-[20%] 2xl:my-[3%] bg-greenColor">
+    <div className=" flex flex-col items-center justify-center py-12 px-5 md:px-[10%] 2xl:px-[20%] 2xl:my-[3%] bg-greenColor">
       {/* Title */}
-      <div className="flex items-center justify-center py-2 md:py-5 mb-[5%]">
+      <div className="flex items-center justify-center py-2 md:py-5 mb-10 w-full">
         <h2 className="text-lg font-semibold text-white">Marcações</h2>
       </div>
       <form
         onSubmit={handleSubmit(onSubmit)}
-        className=" flex flex-col px-5 space-y-5 text-sm"
+        className="flex flex-col max-w-80 xl:max-w-96 px-5 space-y-5 text-sm w-full"
+        // md:px-[15%] xl:px-[25%]
       >
         <input
           {...register('name')}

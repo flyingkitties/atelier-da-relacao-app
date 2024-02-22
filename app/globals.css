@@ -8,7 +8,7 @@
 @layer components {
   /* Buttons */
   .button1 {
-    @apply border-2 border-greenColor rounded-3xl py-1 px-3 sm:px-5 text-xs sm:text-sm lg:text-base;
+    @apply border-2 border-greenColor hover:bg-darkGreenColor hover:border-darkGreenColor hover:text-white rounded-3xl py-1 px-3 sm:px-5 text-xs sm:text-sm lg:text-base;
   }
   /* Tiles */
   .serviceTiles {
