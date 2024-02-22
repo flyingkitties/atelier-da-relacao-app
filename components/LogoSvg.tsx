@@ -2,7 +2,6 @@ import * as React from 'react';
 import {
   SVGMotionProps,
   motion,
-  stagger,
   useMotionValue,
   useTransform,
 } from 'framer-motion';
