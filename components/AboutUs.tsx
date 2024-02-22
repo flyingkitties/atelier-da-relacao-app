@@ -5,7 +5,7 @@ import image1 from '../public/Image1.webp';
 
 function AboutUs() {
   return (
-    <div className="py-12 px-5 md:px-[10%] 2xl:px-[20%] 2xl:my-[3%]">
+    <div className="relative top-16 py-10 px-5 md:px-[10%] 2xl:px-[20%] 2xl:my-[3%]">
       {/* Title */}
       <div className="flex items-center justify-center py-2 md:py-5 ">
         <h2 className="text-lg font-semibold ">Sobre nós</h2>

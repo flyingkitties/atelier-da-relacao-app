@@ -21,7 +21,7 @@ function Appointments() {
   };
 
   return (
-    <div className=" flex flex-col items-center justify-center py-12 px-5 md:px-[10%] 2xl:px-[20%] 2xl:my-[3%] bg-greenColor">
+    <div className="relative top-16 py-10 flex flex-col items-center justify-center px-5 md:px-[10%] 2xl:px-[20%] 2xl:my-[3%] bg-greenColor">
       {/* Title */}
       <div className="flex items-center justify-center py-2 md:py-5 mb-10 w-full">
         <h2 className="text-lg font-semibold text-white">Marcações</h2>

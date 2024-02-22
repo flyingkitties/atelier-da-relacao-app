@@ -4,7 +4,7 @@ import Image from 'next/image';
 
 function Services() {
   return (
-    <div className="pb-12 px-5 md:px-[10%] bg-image2 bg-cover bg-center">
+    <div className="relative top-16 py-10 px-5 md:px-[10%] bg-image2 bg-cover bg-center">
       {/* Title */}
       <div className="flex items-center justify-center py-5 z-50">
         <h2 className="text-lg font-semibold text-white px-5 py-2 drop-shadow-[0_0.5px_0.5px_rgba(0,0,0,0.5)]">

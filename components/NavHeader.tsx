@@ -3,9 +3,9 @@ import React from 'react';
 
 function NavHeader() {
   return (
-    <div className="flex flex-shrink flex-wrap justify-center space-y-3 md:space-y-0 space-x-2 sm:space-x-5 py-[5%] px-5">
+    <div className="flex flex-wrap justify-center gap-3 px-5 py-5">
       <Link href="#aboutUs">
-        <button className="button1 mt-3 ml-3 md:m-0">Sobre nós</button>
+        <button className="button1">Sobre nós</button>
       </Link>
       <Link href="#services">
         <button className="button1">Serviços</button>
