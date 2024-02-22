@@ -5,9 +5,9 @@ import NavHeader from './NavHeader';
 
 function Banner() {
   return (
-    <div className="relative h-[85%] top-16 flex flex-col items-center  text-gray-700 bg-gradient-to-b from-white to-greenColor">
+    <div className="relative h-[90%] top-16 flex flex-col items-center  text-gray-700 bg-gradient-to-b from-white to-greenColor">
       <NavHeader />
-      <div className="flex flex-col h-full mb-[100px] items-center justify-center">
+      <div className="flex flex-col h-full mb-[80px] items-center justify-center">
         <LogoSvg />
 
         <div>
