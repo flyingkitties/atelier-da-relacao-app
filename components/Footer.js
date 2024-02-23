@@ -75,7 +75,7 @@ function Footer() {
           <p className="px-5">Política de Privacidade</p>
         </div>
         {/* Copyright */}
-        <div className="flex justify-center items-center px-5 text-[9px] border-t-[1px] border-gray-400 py-5">
+        <div className="flex justify-center items-center px-5 text-[9px] border-t-[0.4px] border-gray-400 py-5">
           <p>Copyright © 2024 Atelier da Relação</p>
         </div>
       </div>

@@ -26,9 +26,7 @@ function Appointments() {
       <div className="grid grid-row md:grid-cols-2 w-full rounded-xl bg-darkGreenColor ">
         {/* info for appointments */}
         <div className="p-5">
-          <h2 className="text-xl md:text-2xl font-semibold text-white text-center">
-            Marcações
-          </h2>
+          <h2 className="sectionTitle text-white text-center">Marcações</h2>
           <p></p>
         </div>
         {/* form */}

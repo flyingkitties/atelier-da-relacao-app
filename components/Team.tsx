@@ -8,7 +8,7 @@ function Team() {
     <div className="relative top-16 py-10 px-5 md:px-[10%] 2xl:px-[20%] 2xl:my-[3%]">
       {/* Title */}
       <div className="flex items-center justify-center py-2 md:py-5 ">
-        <h2 className="text-lg font-semibold ">Equipa</h2>
+        <h2 className="sectionTitle">Equipa</h2>
       </div>
       <div className="lg:grid grid-cols-2 gap-5 py-5 space-y-5 lg:space-y-0 ">
         <Image

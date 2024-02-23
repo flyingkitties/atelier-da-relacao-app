@@ -11,15 +11,13 @@ import icon5 from '@/public/Icon5.png';
 
 function Services() {
   return (
-    <div className="relative top-16 py-10 px-5 md:px-[10%] bg-darkGreenColor">
+    <div className="relative top-16 py-10 px-5 md:px-[10%] 2xl:px-[20%] bg-darkGreenColor">
       {/* Title */}
-      <div className="flex items-center justify-center py-5 z-50">
-        <h2 className="text-lg font-semibold text-white px-5 py-2 drop-shadow-[0_0.5px_0.5px_rgba(0,0,0,0.5)]">
-          Serviços
-        </h2>
+      <div className="flex items-center justify-center py-5">
+        <h2 className="sectionTitle text-white">Serviços</h2>
       </div>
       {/* Service tiles */}
-      <div className="flex flex-col items-center justify-center py-5 pb-10 space-y-16 rounded-md z-50 md:mx-[15%] lg:mx-[20%] xl:mx-[30%]">
+      <div className="flex flex-col md:grid grid-flow-row grid-cols-2 gap-8 lg:gap-16 xl:gap-20 items-center justify-center py-8 lg:py-16 xl:py-20 pb-10 space-y-16 md:space-y-0 rounded-md ">
         <div className="serviceTiles">
           <Image
             className="serviceImage "

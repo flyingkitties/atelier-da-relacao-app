@@ -8,7 +8,7 @@ function AboutUs() {
     <div className="relative top-16 py-10 px-5 md:px-[10%] 2xl:px-[20%] 2xl:my-[3%]">
       {/* Title */}
       <div className="flex items-center justify-center py-2 md:py-5 ">
-        <h2 className="text-lg font-semibold ">Sobre nós</h2>
+        <h2 className="sectionTitle">Sobre nós</h2>
       </div>
 
       {/* text */}
