@@ -23,7 +23,7 @@
     @apply flex flex-col h-full w-full items-center justify-between py-4 px-3 text-white text-center space-y-3;
   }
   .serviceImage {
-    @apply pb-3 h-16 md:h-20 w-auto;
+    @apply mb-3 h-16 md:h-20 w-auto;
   }
   .servicePrice {
     @apply text-xs md:text-sm;
