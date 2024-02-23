@@ -1,19 +1,9 @@
 import React from 'react';
-import image2 from '../public/Image2.jpg';
 import Image from 'next/image';
-
 import icon1 from '@/public/Icon1.png';
-import icon2 from '@/public/Icon2.png';
 import icon3 from '@/public/Icon3.png';
 import icon4 from '@/public/Icon4.png';
 import icon5 from '@/public/Icon5.png';
-// other icon possibilities
-import { PiSpiralBold } from 'react-icons/pi';
-import { PiBrainLight } from 'react-icons/pi';
-import { BiShapeSquare } from 'react-icons/bi';
-import { MdOutlinePsychology } from 'react-icons/md';
-import { RiShapesLine } from 'react-icons/ri';
-import { FaCircleNodes } from 'react-icons/fa6';
 
 function Services() {
   return (

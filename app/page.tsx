@@ -7,10 +7,11 @@ import WhereWeAre from '@/components/WhereWeAre';
 import Appointments from '@/components/Appointments';
 import Footer from '@/components/Footer';
 import Image from 'next/image';
+import PhotoSlide from '@/components/PhotoSlide';
 
 export default function Home() {
   return (
-    <main className="h-screen snap-y snap-mandatory overflow-y-scroll">
+    <main className="">
       <Header />
       <Banner />
       <section
@@ -22,8 +23,12 @@ export default function Home() {
       <section id="services">
         <Services />
       </section>
+
       <section id="team">
         <Team />
+      </section>
+      <section>
+        <PhotoSlide />
       </section>
       <section id="appointments">
         <Appointments />
