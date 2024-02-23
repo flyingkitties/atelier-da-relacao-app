@@ -5,6 +5,7 @@ import Services from '@/components/Services';
 import Team from '@/components/Team';
 import WhereWeAre from '@/components/WhereWeAre';
 import Appointments from '@/components/Appointments';
+import Footer from '@/components/Footer';
 import Image from 'next/image';
 
 export default function Home() {
@@ -30,6 +31,7 @@ export default function Home() {
       <section id="location">
         <WhereWeAre />
       </section>
+      <Footer />
     </main>
   );
 }

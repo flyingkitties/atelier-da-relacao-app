@@ -8,15 +8,30 @@
 @layer components {
   /* Buttons */
   .button1 {
-    @apply border-2 border-greenColor hover:bg-darkGreenColor hover:border-darkGreenColor hover:text-white rounded-3xl py-1 px-3 sm:px-5 text-xs sm:text-sm lg:text-base;
+    @apply border-2 border-greenColor hover:bg-darkGreenColor hover:border-darkGreenColor hover:text-white rounded-3xl py-1 px-3 sm:px-5 text-xs sm:text-sm lg:text-base tracking-wide;
   }
-  /* Tiles */
+  .button2 {
+    @apply border-[3px] border-gray-100 hover:bg-white hover:border-darkGreenColor hover:text-darkGreenColor hover:shadow-xl rounded-3xl py-1 px-5 text-sm lg:text-base tracking-wide font-semibold shadow-md;
+  }
+
+  /* Services */
   .serviceTiles {
-    @apply min-w-full mx-[5%] py-4 px-3 border-2 border-white text-white rounded-lg text-center shadow-xl z-50;
+    @apply flex flex-col items-center justify-center min-w-full mx-[5%] py-4 px-3 text-white text-center space-y-3;
   }
+  .serviceImage {
+    @apply pb-3 h-16 md:h-20 w-auto;
+  }
+  .servicePrice {
+    @apply text-xs md:text-sm;
+  }
+
   /* Appointments Section */
   .formInput {
     @apply p-2 rounded-lg;
+  }
+  /* Footer */
+  .contactInfoDiv {
+    @apply flex items-center text-[10px] space-x-2;
   }
 }
 
