@@ -46,16 +46,17 @@ function Footer() {
             {/* Hora de atendimento */}
             <div className="contactInfoDiv">
               <IoTimeOutline className="h-5 w-5 xl:h-7 xl:w-7 text-gray-100" />
-              <p>Segunda a Sexta das 09:00-17:00</p>
+              <p>Segunda a Sexta das 09:00-21:30</p>
+              <p>Sábado das 09:00-13:00</p>
             </div>
             {/* Telefone */}
             <div className="contactInfoDiv">
               <BsTelephone className="h-4 w-4 xl:h-6 xl:w-6 text-gray-100" />
-              <p>916 763 087</p>
+              <p>+351 916 763 987</p>
             </div>
             <div className="contactInfoDiv">
               <BsTelephone className="h-4 w-4 xl:h-6 xl:w-6 text-gray-100" />
-              <p>916 356 283</p>
+              <p>+351 916 356 283</p>
             </div>
             {/* Morada */}
             <div className="contactInfoDiv">
