@@ -79,7 +79,7 @@ const PhotoSlide = () => {
         <motion.div
           ref={carouselRef}
           style={{ x }}
-          className="flex gap-4 "
+          className="flex gap-4 snap-mandatory snap-x snap-center"
         >
           {cards.map((card) => {
             return (
