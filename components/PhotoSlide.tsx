@@ -26,29 +26,24 @@ function useElementViewportPosition(ref: React.RefObject<HTMLElement>) {
 
   return { position };
 }
-const slideAnimation: MotionProps = {
-  variants: {
-    full: { backgroundColor: '#663399' },
-    partial: { backgroundColor: '#808080' },
-  },
-  initial: 'partial',
-  whileInView: 'full',
-  viewport: { amount: 1, once: true },
-};
+// const slideAnimation: MotionProps = {
+//   variants: {
+//     full: { backgroundColor: '#663399' },
+//     partial: { backgroundColor: '#808080' },
+//   },
+//   initial: 'partial',
+//   whileInView: 'full',
+//   viewport: { amount: 1, once: true },
+// };
 
 const PhotoSlide = () => {
   const ref = useRef<HTMLDivElement | null>(null);
   const carouselRef = useRef<HTMLDivElement>(null);
   const { position } = useElementViewportPosition(ref);
   const [carouselEndPosition, setCarouselEndPosition] = useState(0);
-  const { scrollYProgress } = useViewportScroll();
-
+  const { scrollYProgress } = useScroll();
+  console.log(position);
   const x = useTransform(scrollYProgress, position, [0, carouselEndPosition]);
-  useEffect(() => {
-    window.addEventListener('scroll', () =>
-      console.log({ scrollYProgress: scrollYProgress, scrollY }),
-    );
-  }, []);
 
   useEffect(() => {
     if (!carouselRef || !carouselRef.current) return;
@@ -78,13 +73,13 @@ const PhotoSlide = () => {
   return (
     <section
       ref={ref}
-      className="relative h-[300vh] bg-darkGreenColor"
+      className="relative px-5 h-[300vh] bg-darkGreenColor"
     >
-      <div className="sticky top-0 h-screen w-[100%] flex items-center overflow-x-hidden">
+      <div className="sticky top-0 h-[80vh] flex items-center overflow-x-hidden">
         <motion.div
           ref={carouselRef}
           style={{ x }}
-          className="flex gap-4"
+          className="flex gap-4 "
         >
           {cards.map((card) => {
             return (
@@ -104,7 +99,7 @@ const Card = ({ card }: { card: CardProps }) => {
   return (
     <div
       key={card.id}
-      className="group relative h-[320px] w-[320px] overflow-hidden bg-neutral-200"
+      className="group relative h-[320px] w-[320px] overflow-hidden rounded-lg"
     >
       <div
         style={{

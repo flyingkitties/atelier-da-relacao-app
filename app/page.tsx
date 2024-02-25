@@ -27,7 +27,9 @@ export default function Home() {
       <section id="team">
         <Team />
       </section>
-      <section>
+      <section
+      //className="relative -top-[50%] -bottom-[50%]"
+      >
         <PhotoSlide />
       </section>
       <section id="appointments">
