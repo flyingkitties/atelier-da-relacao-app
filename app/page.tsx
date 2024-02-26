@@ -25,7 +25,7 @@ export default function Home() {
       <section id="team">
         <Team />
       </section>
-      <section></section>
+
       <section id="appointments">
         <Appointments />
       </section>

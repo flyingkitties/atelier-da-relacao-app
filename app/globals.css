@@ -6,7 +6,13 @@
 @tailwind utilities;
 
 @layer components {
-  /* titles */
+  /* sections*/
+  .section-container {
+    @apply relative top-16 py-16 px-5 md:px-[10%] 2xl:px-[20%] 2xl:my-[3%] font-franklin;
+  }
+  .title-container {
+    @apply flex items-center justify-center py-2 md:py-5;
+  }
   .sectionTitle {
     @apply text-2xl xl:text-3xl 2xl:text-4xl font-semibold;
   }
@@ -21,15 +27,24 @@
   .aboutUsText {
     @apply space-y-5 leading-loose tracking-wide;
   }
+  .groupSection-container {
+    @apply grid lg:grid-cols-2 gap-5 lg:gap-8;
+  }
   /* Services */
+  .tiles-container {
+    @apply flex flex-col md:grid grid-flow-row grid-cols-2 gap-8 lg:gap-16 xl:gap-20 items-center justify-center py-10 lg:py-16 xl:py-20 pb-10 space-y-5 md:space-y-0 rounded-md;
+  }
   .serviceTiles {
     @apply flex flex-col h-full w-full items-center justify-between py-4 px-3 text-white text-center space-y-3;
   }
   .serviceImage {
-    @apply mb-3 h-16 md:h-20 w-auto;
+    @apply mb-3 h-16 md:h-20 xl:h-28 w-auto;
+  }
+  .serviceTitle {
+    @apply xl:text-lg font-semibold;
   }
   .servicePrice {
-    @apply text-xs md:text-sm;
+    @apply text-xs lg:text-sm xl:text-base font-light;
   }
 
   /* Appointments Section */

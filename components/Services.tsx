@@ -1,20 +1,46 @@
-import React from 'react';
+'use client';
+import React, { useRef } from 'react';
 import Image from 'next/image';
 import icon1 from '@/public/Icon1.png';
 import icon3 from '@/public/Icon3.png';
 import icon4 from '@/public/Icon4.png';
 import icon5 from '@/public/Icon5.png';
+import { motion, useInView } from 'framer-motion';
 
-function Services() {
+function Section({ children }: { children: any }): React.JSX.Element {
+  const ref = useRef(null);
+  const isInView = useInView(ref, { once: true });
+
   return (
-    <div className="relative top-16 py-10 px-5 md:px-[10%] 2xl:px-[20%] bg-darkGreenColor">
+    <section ref={ref}>
+      <span
+        className="serviceTiles"
+        style={{
+          transform: isInView ? 'none' : 'translateX(-50px)',
+          opacity: isInView ? 1 : 0,
+          transition: 'all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s',
+        }}
+      >
+        {children}
+      </span>
+    </section>
+  );
+}
+function Services() {
+  const container = useRef(null);
+  const ref = useRef(null);
+  const isInView = useInView(ref, { once: true });
+
+  return (
+    <div className="section-container bg-darkGreenColor">
       {/* Title */}
-      <div className="flex items-center justify-center py-5">
+      <div className="title-container">
         <h2 className="sectionTitle text-white">Serviços</h2>
       </div>
       {/* Service tiles */}
-      <div className="flex flex-col md:grid grid-flow-row grid-cols-2 gap-8 lg:gap-16 xl:gap-20 items-center justify-center py-10 lg:py-16 xl:py-20 pb-10 space-y-5 md:space-y-0 rounded-md ">
-        <div className="serviceTiles">
+      <div className="tiles-container">
+        {/* Tile 1 */}
+        <Section>
           <Image
             className="serviceImage "
             width={68}
@@ -22,11 +48,13 @@ function Services() {
             src={icon3}
             alt="Outline image on children"
           />
-          <p>Consulta de Psicologia e Psicoterapia de Crianças</p>
+          <p className="serviceTitle">
+            Consulta de Psicologia e Psicoterapia de Crianças
+          </p>
           <p className="servicePrice">Sessão: 50€</p>
-          {/* <button className="button2">Agendar</button> */}
-        </div>
-        <div className="serviceTiles">
+        </Section>
+        {/* Tile 2 */}
+        <Section>
           <Image
             className="serviceImage"
             width={68}
@@ -34,24 +62,27 @@ function Services() {
             src={icon5}
             alt="Outline image of a heart and a brain"
           />
-          <p>Consulta de Psicologia e Psicoterapia de Adolescentes</p>
+          <p className="serviceTitle">
+            Consulta de Psicologia e Psicoterapia de Adolescentes
+          </p>
           <p className="servicePrice">Sessão: 50€</p>
-          {/* <button className="button2">Agendar</button> */}
-        </div>
-
-        <div className="serviceTiles">
+        </Section>
+        {/* Tile 3 */}
+        <Section>
           <Image
-            className="h-24 md:h-28 w-auto"
+            className="h-24 md:h-28 xl:h-36 w-auto"
             width={68}
             height={68}
             src={icon4}
             alt="Outline image of holding hands over a heart"
           />
-          <p>Consulta de Psicologia e Psicoterapia de Adultos</p>
+          <p className="serviceTitle">
+            Consulta de Psicologia e Psicoterapia de Adultos
+          </p>
           <p className="servicePrice">Sessão: 50€</p>
-          {/* <button className="button2">Agendar</button> */}
-        </div>
-        <div className="serviceTiles">
+        </Section>
+        {/* Tile 4 */}
+        <Section>
           <Image
             className="serviceImage"
             width={68}
@@ -59,10 +90,9 @@ function Services() {
             src={icon1}
             alt="Outline image of a brain inside a human head"
           />
-          <p>Avaliação Psicológica</p>
+          <p className="serviceTitle">Avaliação Psicológica</p>
           <p className="servicePrice">Pacote de 4 sessões: 150€</p>
-          {/* <button className="button2">Agendar</button> */}
-        </div>
+        </Section>
       </div>
     </div>
   );

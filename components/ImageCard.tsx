@@ -1,16 +1,10 @@
 import React, { useRef } from 'react';
 import { motion, Variants } from 'framer-motion';
-type CardProps = {
-  url: string;
-  id: number;
-  alt: string;
-};
-function ImageCard({ card }: { card: CardProps }) {
-  const ref = useRef<HTMLDivElement | null>(null);
+import { CardProps } from './Props';
 
+function ImageCard({ card }: { card: CardProps }) {
   return (
     <motion.div
-      ref={ref}
       className="relative mb-3 mr-3"
       initial={{
         y: -15,

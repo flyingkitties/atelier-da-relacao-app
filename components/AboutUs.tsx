@@ -1,21 +1,20 @@
 'use client';
-import Image from 'next/image';
-import React, { useEffect } from 'react';
+import React from 'react';
 import ImageCard from './ImageCard';
-import { motion, Variants } from 'framer-motion';
+import { CardProps } from './Props';
 
 function AboutUs() {
   return (
-    <div className="relative top-16 py-10 px-5 md:px-[10%] 2xl:px-[20%] 2xl:my-[3%]">
+    <div className="section-container">
       {/* Title */}
-      <div className="flex items-center justify-center py-2 md:py-5 ">
+      <div className="title-container">
         <h2 className="sectionTitle">Sobre nós</h2>
       </div>
 
       {/* text */}
-      <div className="space-y-5 py-[8%] md:py-[5%] text-justify text-xs sm:text-sm md:text-base xl:text-lg ">
+      <div className="space-y-5 py-[8%] md:py-[5%] text-justify text-xs sm:text-sm lg:text-base xl:text-lg ">
         {/* section 1 */}
-        <div className="grid lg:grid-cols-2 gap-5 lg:gap-8">
+        <div className="groupSection-container">
           <div className="aboutUsText">
             <p>
               O Atelier da Relação nasce de uma criação a dois. Dois psicólogos
@@ -32,6 +31,7 @@ function AboutUs() {
 
           <ImageCard card={cards[0]} />
         </div>
+        {/* Section 2 */}
         <div className="aboutUsText">
           <p>
             Aqui esperamos co-construir um lugar de criatividade e afetividade,
@@ -46,8 +46,8 @@ function AboutUs() {
             <span className="font-bold">descobertas</span>.
           </p>
         </div>
-        {/* section 2 */}
-        <div className="grid lg:grid-cols-2 gap-5">
+        {/* section 3 */}
+        <div className="groupSection-container">
           <ImageCard card={cards[1]} />
           <div className="aboutUsText">
             <p>
@@ -56,10 +56,13 @@ function AboutUs() {
               reescrever a história de cada um através deste espaço terapêutico.
             </p>
             <p>
-              Como dizia o psicanalista Coimbra de Matos: &quot;…ensina-me a ser
-              gente, sentir as minhas emoções, ter sentimentos, pensar os meus
-              pensamentos, ter pensamento; ser sujeito, reconhecer-me como
-              alguém em devir...&quot;.
+              Como dizia o psicanalista Coimbra de Matos:{' '}
+              <span className="italic font-semibold">
+                &quot;…ensina-me a ser gente, sentir as minhas emoções, ter
+                sentimentos, pensar os meus pensamentos, ter pensamento; ser
+                sujeito, reconhecer-me como alguém em devir...&quot;
+              </span>
+              .
             </p>
           </div>
         </div>
@@ -71,7 +74,8 @@ function AboutUs() {
             criar uma relação terapêutica de confiança e promotora de mudanças.
           </p>
         </div>
-        <div className="grid lg:grid-cols-2 gap-5">
+        {/* Section 4 */}
+        <div className="groupSection-container">
           <div className="lg:hidden">
             <ImageCard card={cards[2]} />
           </div>
@@ -85,7 +89,7 @@ function AboutUs() {
             </p>
             <p>
               E porque a vida é movimento e a vida mental é criatividade, surge
-              o <span className="font-bold">nosso</span>, e agora o{' '}
+              o <span className="font-bold">nosso</span>, e agora o
               <span className="font-bold">vosso, Atelier da Relação.</span>
             </p>
           </div>
@@ -105,18 +109,15 @@ const cards: CardProps[] = [
     url: '/spacePhotos/SP-2-6.jpg',
     id: 1,
     alt: 'Fotografia do Atelier - cadeiras e mesa',
-    props: undefined,
   },
   {
     url: '/spacePhotos/SP-3.jpeg',
     id: 2,
     alt: 'Fotografia do Atelier - Espaço',
-    props: undefined,
   },
   {
     url: '/spacePhotos/SP-4-2.jpg',
     id: 3,
     alt: 'Fotografia do Atelier - Espaço',
-    props: undefined,
   },
 ];
