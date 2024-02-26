@@ -4,9 +4,9 @@ function Quote() {
   return (
     <div>
       <p>
-        "O que importa agora é fornecer a compreensão e o complemento que
+        &quot;"O que importa agora é fornecer a compreensão e o complemento que
         faltaram (ao paciente) - para que o desenvolvimento e a saúde, a nova
-        vida, se instalem. Aberto o caminho, é só caminhar..."
+        vida, se instalem. Aberto o caminho, é só caminhar...&quot;
       </p>
       <p>António Coimbra de Matos (2017), Laço de Seda - Mente de Diamante.</p>
     </div>
