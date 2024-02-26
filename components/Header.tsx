@@ -7,7 +7,7 @@ import { SlLocationPin } from 'react-icons/sl';
 
 function Header() {
   return (
-    <div className="fixed top-0 flex justify-between w-full py-3 xl:py-5 bg-white px-3 sm:px-5 lg:px-10 z-10">
+    <div className="fixed top-0 flex justify-between w-full py-3 xl:py-5 bg-white px-3 sm:px-5 lg:px-10 z-50">
       {/* Logo */}
       <div className="flex items-center ">
         <p className="uppercase tracking-widest text-xs md:text-sm xl:text-lg text-gray-700">

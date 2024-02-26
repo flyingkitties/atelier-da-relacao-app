@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useRef } from 'react';
 import { motion, Variants } from 'framer-motion';
 type CardProps = {
   url: string;
@@ -6,25 +6,24 @@ type CardProps = {
   alt: string;
 };
 function ImageCard({ card }: { card: CardProps }) {
-  const cardVariants: Variants = {
-    offscreen: {
-      y: 300,
-    },
-    onscreen: {
-      y: 50,
-      rotate: -10,
-      transition: {
-        type: 'spring',
-        bounce: 0.4,
-        duration: 0.8,
-      },
-    },
-  };
+  const ref = useRef<HTMLDivElement | null>(null);
+
   return (
-    <div className="relative mb-3 mr-3">
+    <motion.div
+      ref={ref}
+      className="relative mb-3 mr-3"
+      initial={{
+        y: -15,
+        opacity: 0.5,
+      }}
+      whileInView={{ y: 0, opacity: 1 }}
+      transition={{
+        duration: 1,
+      }}
+    >
       <div
         key={card.id}
-        className="group relative h-80 lg:h-full w-full overflow-hidden rounded-lg z-10 shadow-md"
+        className="group relative h-56 md:h-80 lg:h-full w-full overflow-hidden rounded-lg z-10 shadow-md"
       >
         <div
           style={{
@@ -37,7 +36,7 @@ function ImageCard({ card }: { card: CardProps }) {
         <div className="absolute -bottom-5 -right-5 top-0 left-0  bg-greenColor/20"></div>
       </div>
       <div className="absolute -bottom-3 -right-3 top-3 left-3 border-2 border-greenColor rounded-md "></div>
-    </div>
+    </motion.div>
   );
 }
 export default ImageCard;

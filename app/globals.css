@@ -17,7 +17,10 @@
   .button2 {
     @apply border-[3px] border-gray-100 hover:bg-white hover:border-darkGreenColor hover:text-darkGreenColor hover:shadow-xl rounded-3xl py-1 px-5 text-sm lg:text-base tracking-wide font-semibold shadow-md;
   }
-
+  /* About Section */
+  .aboutUsText {
+    @apply space-y-5 leading-loose tracking-wide;
+  }
   /* Services */
   .serviceTiles {
     @apply flex flex-col h-full w-full items-center justify-between py-4 px-3 text-white text-center space-y-3;
