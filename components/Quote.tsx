@@ -4,7 +4,7 @@ function Quote() {
   return (
     <div>
       <p>
-        &quot;"O que importa agora é fornecer a compreensão e o complemento que
+        &quot;O que importa agora é fornecer a compreensão e o complemento que
         faltaram (ao paciente) - para que o desenvolvimento e a saúde, a nova
         vida, se instalem. Aberto o caminho, é só caminhar...&quot;
       </p>
