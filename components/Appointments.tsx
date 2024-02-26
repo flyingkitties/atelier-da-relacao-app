@@ -22,7 +22,7 @@ function Appointments() {
   };
 
   return (
-    <div className="relative py-16 flex flex-col items-center justify-center px-5 md:px-[10%] bg-gray-200">
+    <div className="relative top-16 py-16 flex flex-col items-center justify-center px-5 md:px-[10%] bg-gray-100">
       <div className="grid grid-row md:grid-cols-2 w-full rounded-xl bg-darkGreenColor ">
         {/* info for appointments */}
         <div className="p-5">

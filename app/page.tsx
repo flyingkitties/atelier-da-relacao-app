@@ -6,8 +6,6 @@ import Team from '@/components/Team';
 import WhereWeAre from '@/components/WhereWeAre';
 import Appointments from '@/components/Appointments';
 import Footer from '@/components/Footer';
-import Image from 'next/image';
-import PhotoSlide from '@/components/PhotoSlide';
 
 export default function Home() {
   return (
@@ -27,11 +25,7 @@ export default function Home() {
       <section id="team">
         <Team />
       </section>
-      <section
-      //className="relative -top-[50%] -bottom-[50%]"
-      >
-        <PhotoSlide />
-      </section>
+      <section></section>
       <section id="appointments">
         <Appointments />
       </section>

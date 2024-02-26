@@ -60,7 +60,7 @@ function Services() {
             alt="Outline image of a brain inside a human head"
           />
           <p>Avaliação Psicológica</p>
-          <p className="servicePrice">Sessão: 50€</p>
+          <p className="servicePrice">Pacote de 4 sessões: 150€</p>
           {/* <button className="button2">Agendar</button> */}
         </div>
       </div>
