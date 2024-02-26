@@ -63,10 +63,10 @@ function AboutUs() {
         <div className="grid lg:grid-cols-2 gap-5">
           <div className="space-y-5">
             <p>
-              Como dizia o psicanalista Coimbra de Matos: “…ensina-me a ser
+              Como dizia o psicanalista Coimbra de Matos: &quot;…ensina-me a ser
               gente, sentir as minhas emoções, ter sentimentos, pensar os meus
               pensamentos, ter pensamento; ser sujeito, reconhecer-me como
-              alguém em devir...".
+              alguém em devir...&quot;.
             </p>
             <p>
               Assumimos <span className="font-bold">valores</span> como: empatia
