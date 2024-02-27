@@ -46,14 +46,36 @@
   .servicePrice {
     @apply text-xs lg:text-sm xl:text-base font-light;
   }
-
+  /* Team Section */
+  .TeamInfo-container {
+    @apply flex flex-col items-center justify-center p-4 rounded-lg h-20 mx-[10%] text-gray-800;
+  }
+  .TeamName {
+    @apply md:text-lg xl:text-xl font-bold;
+  }
+  .TeamJob {
+    @apply text-xs md:text-sm xl:text-base font-semibold;
+  }
+  .TeamCedula {
+    @apply text-[8px] md:text-[10px];
+  }
+  .TeamImageBox {
+    @apply relative -top-[50px] sm:-top-[69px] md:-top-24 lg:-top-16;
+  }
+  /* Quote Section */
+  .quoteIcon {
+    @apply h-6 w-6 md:h-8 md:w-8;
+  }
+  .quote-container {
+    @apply py-3 space-y-3 tracking-wide;
+  }
   /* Appointments Section */
   .formInput {
     @apply p-2 rounded-lg;
   }
   /* Where we are */
   .whereWeAre-box {
-    @apply w-full shadow-md rounded-lg bg-gray-50 p-5 py-10 space-y-3;
+    @apply w-full shadow-md rounded-lg bg-greenColor/5 p-5 py-10 space-y-3;
   }
   /* Footer */
   .contactInfoDiv {

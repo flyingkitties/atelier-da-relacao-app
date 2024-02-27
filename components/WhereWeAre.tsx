@@ -2,9 +2,9 @@ import React from 'react';
 
 function WhereWeAre() {
   return (
-    <div className="relative top-16 py-10  px-5 md:px-[10%] 2xl:px-[20%] 2xl:my-[3%]">
+    <div className="section-container bg-white">
       {/* Title */}
-      <div className="flex items-center justify-center py-2 md:py-5 ">
+      <div className="title-container">
         <h2 className="sectionTitle">Onde estamos</h2>
       </div>
       {/* Body */}

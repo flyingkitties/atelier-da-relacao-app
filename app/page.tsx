@@ -6,6 +6,7 @@ import Team from '@/components/Team';
 import WhereWeAre from '@/components/WhereWeAre';
 import Appointments from '@/components/Appointments';
 import Footer from '@/components/Footer';
+import Quote from '@/components/Quote';
 
 export default function Home() {
   return (
@@ -21,11 +22,12 @@ export default function Home() {
       <section id="services">
         <Services />
       </section>
-
       <section id="team">
         <Team />
       </section>
-
+      <section>
+        <Quote />
+      </section>
       <section id="appointments">
         <Appointments />
       </section>
