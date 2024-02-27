@@ -74,9 +74,13 @@ function Footer() {
         </div>
         {/* Terms and privacy */}
         <div className="flex justify-center p-5 text-xs px-5 md:px-[10%] 2xl:px-[20%] space-x-2">
-          <p className="sm:px-5">Termos e Condições</p>
+          <Link href="/termos-e-condicoes">
+            <p className="sm:px-5">Termos e Condições</p>
+          </Link>
           <p>|</p>
-          <p className="sm:px-5">Política de Privacidade</p>
+          <Link href="/politica-de-privacidade">
+            <p className="sm:px-5">Política de Privacidade</p>
+          </Link>
         </div>
         {/* Copyright */}
         <div className="flex justify-center items-center px-5 text-[9px] border-t-[0.4px] border-gray-400 py-5">

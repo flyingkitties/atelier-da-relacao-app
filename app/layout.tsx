@@ -16,9 +16,6 @@ const myFont = localFont({
 });
 
 export const metadata: Metadata = {
-  icons: {
-    icon: '/favicon.ico', // /public path
-  },
   title: 'Atelier da Relação',
   description:
     ' Atelier da Relação - Consulta de Psicologia e Psicoterapia de Crianças - Consulta de Psicologia e Psicoterapia de Adolescentes - Consulta de Psicologia e Psicoterapia de Adultos - Avaliação Psicológica - Lisboa',
