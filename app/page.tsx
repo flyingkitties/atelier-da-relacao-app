@@ -13,10 +13,7 @@ export default function Home() {
     <main className="">
       <Header />
       <Banner />
-      <section
-        id="aboutUs"
-        className="snap"
-      >
+      <section id="aboutUs">
         <AboutUs />
       </section>
       <section id="services">
@@ -25,7 +22,7 @@ export default function Home() {
       <section id="team">
         <Team />
       </section>
-      <section>
+      <section id="quote">
         <Quote />
       </section>
       <section id="appointments">
