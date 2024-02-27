@@ -5,7 +5,7 @@ import { CardProps } from './Props';
 
 function AboutUs() {
   return (
-    <div className="section-container">
+    <div className="section-container pt-28">
       {/* Title */}
       <div className="title-container">
         <h2 className="sectionTitle">Sobre nós</h2>

@@ -8,7 +8,7 @@
 @layer components {
   /* sections*/
   .section-container {
-    @apply relative top-16 py-16 px-5 md:px-[10%] 2xl:px-[20%] 2xl:my-[3%] font-franklin;
+    @apply py-16 px-5 md:px-[10%] 2xl:px-[20%] 2xl:my-[3%] font-franklin;
   }
   .title-container {
     @apply flex items-center justify-center py-2 md:py-5;
@@ -71,7 +71,7 @@
   }
   /* Appointments Section */
   .formInput {
-    @apply pt-2 border-b border-gray-300;
+    @apply px-2 pt-2 border-b border-gray-300;
   }
   /* Where we are */
   .whereWeAre-box {
