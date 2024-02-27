@@ -22,8 +22,8 @@ function Appointments() {
   };
 
   return (
-    <div className="relative top-16 py-16 flex flex-col items-center justify-center px-5 md:px-[10%] bg-gray-100">
-      <div className="grid grid-row md:grid-cols-2 w-full rounded-xl bg-darkGreenColor ">
+    <div className="section-container bg-white">
+      <div className="grid grid-row md:grid-cols-2 w-full rounded-xl bg-darkGreenColor shadow-lg ">
         {/* info for appointments */}
         <div className="p-5">
           <h2 className="sectionTitle text-white text-center">Marcações</h2>
@@ -31,7 +31,7 @@ function Appointments() {
         </div>
         {/* form */}
 
-        <div className="m-5 bg-gray-100 rounded-xl p-2">
+        <div className="m-5 rounded-xl bg-white p-2">
           <form
             onSubmit={handleSubmit(onSubmit)}
             className="flex flex-col w-full p-5 space-y-5 
@@ -65,7 +65,7 @@ function Appointments() {
             <textarea
               {...register('message')}
               placeholder="Mensagem"
-              className="formInput min-h-[100px]"
+              className="p-2 border border-gray-300 rounded-xl min-h-[100px]"
             />
             <button
               type="submit"

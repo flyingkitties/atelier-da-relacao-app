@@ -71,7 +71,7 @@
   }
   /* Appointments Section */
   .formInput {
-    @apply p-2 rounded-lg;
+    @apply pt-2 border-b border-gray-300;
   }
   /* Where we are */
   .whereWeAre-box {
