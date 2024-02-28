@@ -1,12 +1,13 @@
 'use client';
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import TextField from '@mui/material/TextField';
 import MenuItem from '@mui/material/MenuItem';
 import { useForm, SubmitHandler, Controller } from 'react-hook-form';
 import { Inputs, TemplateParams } from './Props';
 import { FormControl } from '@mui/material';
 import emailjs from '@emailjs/browser';
-import toast from 'react-hot-toast';
+import { toast, ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 function FormAppointments() {
   const options = [
@@ -54,7 +55,6 @@ function FormAppointments() {
       subject: formData.subject,
       message: formData.message,
     };
-    toast.loading('A enviar mensagem...');
 
     emailjs
       .send(
@@ -67,8 +67,7 @@ function FormAppointments() {
       )
       .then(
         () => {
-          toast('A sua mensagem foi enviada!');
-          console.log('success');
+          toast.success('A sua mensagem foi enviada!');
           reset();
         },
         (error) => {
@@ -86,6 +85,10 @@ function FormAppointments() {
         onSubmit={handleSubmit(onSubmit)}
         className="flex flex-col p-2 md:p-5 "
       >
+        <ToastContainer
+          position="top-center"
+          hideProgressBar
+        />
         <FormControl
           sx={{
             '& .MuiFormLabel-root': {
