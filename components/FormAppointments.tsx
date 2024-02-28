@@ -1,10 +1,12 @@
 'use client';
-import React, { useEffect } from 'react';
+import React from 'react';
 import TextField from '@mui/material/TextField';
 import MenuItem from '@mui/material/MenuItem';
 import { useForm, SubmitHandler, Controller } from 'react-hook-form';
-import { Inputs } from './Props';
+import { Inputs, TemplateParams } from './Props';
 import { FormControl } from '@mui/material';
+import emailjs from '@emailjs/browser';
+import toast from 'react-hot-toast';
 
 function FormAppointments() {
   const options = [
@@ -26,23 +28,13 @@ function FormAppointments() {
     },
   ];
 
-  const defaultValues = {
-    name: '',
-    email: '',
-    phoneNumber: null,
-    option: '',
-    subject: '',
-    message: '',
-  };
-
   const {
     register,
     control,
     handleSubmit,
     reset,
-    formState,
-    formState: { errors, isSubmitSuccessful },
-  } = useForm<Inputs>({
+    formState: { errors },
+  } = useForm({
     defaultValues: {
       name: '',
       email: '',
@@ -53,16 +45,38 @@ function FormAppointments() {
     },
   });
 
-  useEffect(() => {
-    if (formState.isSubmitSuccessful) {
-      reset(defaultValues);
-    }
-  }, [formState, isSubmitSuccessful]);
+  const onSubmit = (formData: Inputs) => {
+    const templateParams = {
+      from_name: formData.name,
+      from_email: formData.email,
+      from_phone_number: formData.phoneNumber,
+      option: formData.option,
+      subject: formData.subject,
+      message: formData.message,
+    };
+    toast.loading('A enviar mensagem...');
 
-  const onSubmit: SubmitHandler<Inputs> = (formData) => {
-    console.log('errors:', errors);
+    emailjs
+      .send(
+        `${process.env.NEXT_PUBLIC_YOUR_SERVICE_ID}`,
+        `${process.env.NEXT_PUBLIC_YOUR_TEMPLATE_ID}`,
+        templateParams,
+        {
+          publicKey: `${process.env.NEXT_PUBLIC_YOUR_PUBLIC_KEY}`,
+        },
+      )
+      .then(
+        () => {
+          toast('A sua mensagem foi enviada!');
+          console.log('success');
+          reset();
+        },
+        (error) => {
+          toast.error('Ocorreu um erro, por favor tente novamente.');
+        },
+      );
 
-    window.location.href = `mailto:atelier.relacao@gmail.com?subject=${formData.subject}&body=Nome: ${formData.name} %0D%0A Email: ${formData.email}  %0D%0A Numero de telefone: ${formData.phoneNumber} %0D%0A tipo: ${formData.option} %0D%0A Mensagem: ${formData.message} `;
+    // window.location.href = `mailto:atelier.relacao@gmail.com?subject=${formData.subject}&body=Nome: ${formData.name} %0D%0A Email: ${formData.email}  %0D%0A Numero de telefone: ${formData.phoneNumber} %0D%0A tipo: ${formData.option} %0D%0A Mensagem: ${formData.message} `;
   };
 
   return (
