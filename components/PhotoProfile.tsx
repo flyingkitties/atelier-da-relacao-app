@@ -16,12 +16,12 @@ function PhotoProfile({ photo, name, profession, id, points }: ProfileProps) {
         <div className="absolute bottom-0 top-[45%] right-0 left-0 bg-greenColor z-0 -mx-3 md:-mx-[20%] xl:-mx-[50%]"></div>
       </div>
 
-      <div className="relative px-2 md:px-5 -top-5 rounded-b-lg z-20 bg-white w-full lg:max-w-[400px] shadow-sm">
+      <div className="relative px-2 md:px-5 -top-5 rounded-b-lg z-20 bg-white w-full lg:max-w-[400px] shadow-lg">
         {/* Title */}
         <div className="TeamInfo-container relative z-10 ">
           <h3 className="TeamName">{name}</h3>
           <h4 className="TeamJob">{profession}</h4>
-          <p className="TeamCedula">{id}</p>
+          <p className="TeamCedula text-gray-600">{id}</p>
         </div>
         {/* description */}
 
