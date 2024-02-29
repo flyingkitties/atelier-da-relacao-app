@@ -90,7 +90,7 @@ function AboutUs() {
             <p>
               E porque a vida é movimento e a vida mental é criatividade, surge
               o <span className="font-bold">nosso</span>, e agora o
-              <span className="font-bold">vosso, Atelier da Relação.</span>
+              <span className="font-bold"> vosso, Atelier da Relação.</span>
             </p>
           </div>
           <div className="hidden lg:inline-grid">

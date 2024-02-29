@@ -22,12 +22,13 @@ export default function Home() {
       <section id="team">
         <Team />
       </section>
+      {/* <section id="quote">
+        <Quote />
+      </section> */}
       <section id="appointments">
         <Appointments />
       </section>
-      <section id="quote">
-        <Quote />
-      </section>
+
       <section id="location">
         <WhereWeAre />
       </section>

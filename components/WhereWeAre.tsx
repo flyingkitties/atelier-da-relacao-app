@@ -25,35 +25,37 @@ function WhereWeAre() {
           {/* Como chegar */}
           <div className="whereWeAre-box">
             <h3 className="font-bold text-base text-center">Como Chegar</h3>
-            <ul className="space-y-5 pt-5">
-              <li>
-                <p>
-                  <span className="font-bold">Metro: </span>Linha Amarela -
-                  Entrecampos - 11 min. a pé (800 m)
-                </p>
-              </li>
-              <li>
-                <p>
-                  <span className="font-bold">Comboio: </span>Estação de
-                  Entrecampos - 11 min. a pé (800 m)
-                </p>
-              </li>
-              <li>
-                <p>
-                  <span className="font-bold">Autocarros: </span>L731 e 52B - 1
-                  min (70 m)
-                </p>
-                <p>701/732/754/726/755/732/735</p>
-              </li>
-              <li>
-                <p>
-                  <span className="font-bold">
-                    Perto do Hospital de Santa Maria:
-                  </span>
-                  11 min a pé (800 m)
-                </p>
-              </li>
-            </ul>
+            <div className="flex items-center justify-center">
+              <ul className="space-y-5 pt-5">
+                <li>
+                  <p>
+                    <span className="font-bold">Metro: </span>Linha Amarela -
+                    Entrecampos - 11 min. a pé (800 m)
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    <span className="font-bold">Comboio: </span>Estação de
+                    Entrecampos - 11 min. a pé (800 m)
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    <span className="font-bold">Autocarros: </span>L731 e 52B -
+                    1 min (70 m)
+                  </p>
+                  <p>701/732/754/726/755/732/735</p>
+                </li>
+                <li>
+                  <p>
+                    <span className="font-bold">
+                      Perto do Hospital de Santa Maria:
+                    </span>
+                    11 min a pé (800 m)
+                  </p>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>

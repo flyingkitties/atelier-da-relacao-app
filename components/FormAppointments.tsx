@@ -74,12 +74,10 @@ function FormAppointments() {
           toast.error('Ocorreu um erro, por favor tente novamente.');
         },
       );
-
-    // window.location.href = `mailto:atelier.relacao@gmail.com?subject=${formData.subject}&body=Nome: ${formData.name} %0D%0A Email: ${formData.email}  %0D%0A Numero de telefone: ${formData.phoneNumber} %0D%0A tipo: ${formData.option} %0D%0A Mensagem: ${formData.message} `;
   };
 
   return (
-    <div className="m-3 md:m-5 rounded-xl bg-white p-2 ">
+    <div className="m-3 md:m-5 rounded-xl bg-gray-50 p-2 ">
       {/* form */}
       <form
         onSubmit={handleSubmit(onSubmit)}
@@ -94,8 +92,14 @@ function FormAppointments() {
             '& .MuiFormLabel-root': {
               fontSize: '0.8rem',
             },
+            '@media (min-width: 768px)': {
+              // Adjust the breakpoint according to your medium screen size
+              '& .MuiFormLabel-root': {
+                fontSize: '1rem', // Set the desired font size for medium screens
+              },
+            },
           }}
-          className="space-y-3 md:space-y-4 w-full overflow-hidden"
+          className="md:text-base space-y-3 md:space-y-4 w-full overflow-hidden"
         >
           <TextField
             {...register('name')}

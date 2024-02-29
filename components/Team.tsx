@@ -3,6 +3,7 @@ import React from 'react';
 import vitor from '../public/Vitor.png';
 import PhotoProfile from './PhotoProfile';
 import filipa from '../public/Filipa.png';
+import Quote from './Quote';
 
 function Team() {
   return (
@@ -42,6 +43,7 @@ function Team() {
           ]}
         />
       </div>
+      <Quote />
     </div>
   );
 }

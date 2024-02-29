@@ -12,7 +12,7 @@ function Banner() {
 
         <div>
           <h1 className="uppercase font-franklin pt-5 pb-2 text-2xl md:text-3xl xl:text-4xl text-center">
-            Atelier da relação
+            Atelier da Relação
           </h1>
           <h2 className="font-gistesy text-2xl md:text-3xl xl:text-4xl text-center">
             {' '}
