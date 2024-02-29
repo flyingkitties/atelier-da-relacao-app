@@ -6,26 +6,32 @@ import { ProfileProps } from './Props';
 
 function PhotoProfile({ photo, name, profession, id, points }: ProfileProps) {
   return (
-    <div className="flex flex-col justify-center ">
-      <div className="relative flex justify-center">
+    <div className="flex flex-col  items-center w-full h-full">
+      <div className="relative flex justify-center w-full">
         <Image
-          className=" px-[20%] z-10 w-full h-auto max-w-[400px]"
+          className="z-10 w-48 h-48"
           src={photo}
           alt="Filipa Psicóloga"
         />
-        <div className="absolute bottom-0 top-[45%] right-0 left-0 bg-greenColor z-0 -mx-3 md:-mx-[20%] xl:-mx-[50%]"></div>
+        <div
+          className="absolute bottom-0 top-[45%] bg-greenColor 
+        z-0 w-full"
+        ></div>
       </div>
 
-      <div className="relative px-2 md:px-5 -top-5 rounded-b-lg z-20 bg-white w-full lg:max-w-[400px] shadow-lg">
+      <div
+        className="px-2 md:px-5 -mt-5 z-20 bg-white 
+      w-full shadow-lg max-w-60 md:max-w-80 lg:max-w-96 mx-5 h-full"
+      >
         {/* Title */}
-        <div className="TeamInfo-container relative z-10 ">
+        <div className="TeamInfo-container z-10 ">
           <h3 className="TeamName">{name}</h3>
           <h4 className="TeamJob">{profession}</h4>
           <p className="TeamCedula text-gray-600">{id}</p>
         </div>
         {/* description */}
 
-        <ul className="text-xs space-y-3 py-5 team">
+        <ul className="text-[10px] sm:text-xs space-y-3 py-5 team">
           {points.map((point) => (
             <li key={name}>
               <div>
