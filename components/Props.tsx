@@ -1,3 +1,5 @@
+import { StaticImageData } from 'next/image';
+
 export interface CardProps {
   url: string;
   id: number;
@@ -20,4 +22,12 @@ export interface TemplateParams {
   option: {};
   subject: string;
   message: string;
+}
+
+export interface ProfileProps {
+  photo: StaticImageData;
+  name: string;
+  profession: string;
+  id: string;
+  points: string[];
 }

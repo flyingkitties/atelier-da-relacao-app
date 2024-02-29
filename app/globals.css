@@ -51,7 +51,7 @@
   }
   /* Team Section */
   .TeamInfo-container {
-    @apply flex flex-col items-center justify-center p-4 rounded-lg h-20 mx-[10%] text-gray-800;
+    @apply flex flex-col items-center justify-center p-4;
   }
   .TeamName {
     @apply md:text-lg xl:text-xl font-bold;
@@ -62,9 +62,10 @@
   .TeamCedula {
     @apply text-[8px] md:text-[10px];
   }
-  .TeamImageBox {
-    @apply relative -top-[50px] sm:-top-[69px] md:-top-24 lg:-top-16;
+  ul.team li {
+    @apply flex items-start space-x-2;
   }
+
   /* Quote Section */
   .quoteIcon {
     @apply h-6 w-6 md:h-8 md:w-8;
