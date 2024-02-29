@@ -54,13 +54,13 @@
     @apply flex flex-col items-center justify-center p-4;
   }
   .TeamName {
-    @apply md:text-lg xl:text-xl font-bold;
+    @apply text-lg md:text-xl xl:text-2xl font-bold mb-[1%];
   }
   .TeamJob {
-    @apply text-xs md:text-sm xl:text-base font-semibold;
+    @apply text-xs md:text-sm lg:text-base xl:text-lg font-semibold;
   }
   .TeamCedula {
-    @apply text-[8px] md:text-[10px];
+    @apply text-[8px] md:text-[10px] lg:text-xs;
   }
   ul.team li {
     @apply flex items-start space-x-2;
