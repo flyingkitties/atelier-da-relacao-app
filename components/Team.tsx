@@ -6,7 +6,7 @@ import filipa from '../public/Filipa.png';
 
 function Team() {
   return (
-    <div className="py-16 px-5 md:px-[10%] 2xl:px-[20%] 2xl:my-[3%] font-franklin bg-white">
+    <div className="section-container bg-white">
       {/* Title */}
       <div className="flex items-center justify-center py-2 md:py-5 ">
         <h2 className="sectionTitle">Equipa</h2>

@@ -8,7 +8,7 @@
 @layer components {
   /* sections*/
   .section-container {
-    @apply py-16 px-5 md:px-[10%] 2xl:px-[20%] 2xl:my-[3%] font-franklin;
+    @apply py-16 px-5 md:px-[10%] 2xl:px-[14%] 2xl:my-[3%] font-franklin;
   }
   .title-container {
     @apply flex items-center justify-center py-2 md:py-5;
