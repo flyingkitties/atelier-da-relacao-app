@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import { Inter, Libre_Franklin } from 'next/font/google';
 import localFont from 'next/font/local';
 import './globals.css';
+import { Analytics } from '@vercel/analytics/react';
 
 const inter = Inter({ subsets: ['latin'] });
 const libreFranklin = Libre_Franklin({
@@ -31,7 +32,10 @@ export default function RootLayout({
       lang="en"
       className={`${libreFranklin.variable} ${myFont.variable}`}
     >
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className}>
+        {children}
+        <Analytics />
+      </body>
     </html>
   );
 }

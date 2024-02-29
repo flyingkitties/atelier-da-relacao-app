@@ -6,7 +6,6 @@ import Team from '@/components/Team';
 import WhereWeAre from '@/components/WhereWeAre';
 import Appointments from '@/components/Appointments';
 import Footer from '@/components/Footer';
-import Quote from '@/components/Quote';
 
 export default function Home() {
   return (
