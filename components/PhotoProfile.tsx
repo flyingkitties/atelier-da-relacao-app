@@ -13,7 +13,7 @@ function PhotoProfile({ photo, name, profession, id, points }: ProfileProps) {
           src={photo}
           alt="Filipa Psicóloga"
         />
-        <div className="absolute bottom-0 top-[45%] right-0 left-0 bg-greenColor z-0 -mx-3 md:-mx-[50px]"></div>
+        <div className="absolute bottom-0 top-[45%] right-0 left-0 bg-greenColor z-0 -mx-3 md:-mx-[20%] xl:-mx-[50%]"></div>
       </div>
 
       <div className="relative px-2 md:px-5 -top-5 rounded-b-lg z-20 bg-white w-full lg:max-w-[400px] shadow-sm">
