@@ -8,6 +8,7 @@ import { FormControl } from '@mui/material';
 import emailjs from '@emailjs/browser';
 import { toast, ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import { motion } from 'framer-motion';
 
 function FormAppointments() {
   const options = [
@@ -169,7 +170,7 @@ function FormAppointments() {
           />
           <button
             type="submit"
-            className="bg-darkGreenColor py-3 rounded-lg text-white font-bold hover:bg-darkGreenColor/80"
+            className="bg-darkGreenColor my-3 py-3 rounded-lg text-white font-bold hover:bg-darkGreenColor/80"
           >
             Submit
           </button>
