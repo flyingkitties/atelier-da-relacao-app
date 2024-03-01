@@ -9,6 +9,8 @@ import { PiHouseLine } from 'react-icons/pi';
 import { BsTelephone } from 'react-icons/bs';
 import { IoTimeOutline } from 'react-icons/io5';
 import { MdOutlineMailOutline } from 'react-icons/md';
+import { CiFacebook } from 'react-icons/ci';
+import { CiInstagram } from 'react-icons/ci';
 
 function Footer() {
   return (
@@ -60,15 +62,15 @@ function Footer() {
               rel="noopener noreferrer"
               className="p-[3px] bg-gray-100 rounded-full"
             >
-              <RiFacebookCircleLine className="h-6 w-6 xl:h-8 xl:w-8 text-darkGreenColor" />
+              <CiFacebook className="h-6 w-6 xl:h-8 xl:w-8 text-darkGreenColor" />
             </Link>
             <Link
               href="https://www.instagram.com/atelierdarelacao"
               target="_blank"
               rel="noopener noreferrer"
-              className="p-1 bg-gray-100 rounded-full"
+              className="p-[3px] bg-gray-100 rounded-full"
             >
-              <FaInstagram className="h-5 w-5 xl:h-7 xl:w-7 text-darkGreenColor" />
+              <CiInstagram className="h-6 w-6 xl:h-8 xl:w-8 text-darkGreenColor" />
             </Link>
           </nav>
         </div>
