@@ -50,7 +50,7 @@ function WhereWeAre() {
                 <li>
                   <p>
                     <span className="font-bold">
-                      Perto do Hospital de Santa Maria:
+                      Perto do Hospital de Santa Maria:{' '}
                     </span>
                     11 min a pé (800 m)
                   </p>
