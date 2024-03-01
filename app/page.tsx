@@ -2,14 +2,14 @@ import AboutUs from '@/components/AboutUs';
 import Banner from '@/components/banner /Banner';
 import Header from '@/components/Header';
 import Services from '@/components/Services';
-import Team from '@/components/teamSection/Team';
+import Team from '@/components/TeamSection/Team';
 import WhereWeAre from '@/components/WhereWeAre';
 import Appointments from '@/components/appointmentsSection/Appointments';
 import Footer from '@/components/Footer';
 
 export default function Home() {
   return (
-    <main className="">
+    <main>
       <Header />
       <Banner />
       <section id="aboutUs">
