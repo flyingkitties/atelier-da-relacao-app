@@ -12,7 +12,7 @@ const libreFranklin = Libre_Franklin({
 });
 const myFont = localFont({
   src: './my-font.woff2',
-  display: 'swap',
+  // display: 'swap',
   variable: '--font-gistesy',
 });
 

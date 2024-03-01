@@ -116,7 +116,7 @@ const cards: CardProps[] = [
     alt: 'Fotografia do Atelier - Espaço',
   },
   {
-    url: '/spacePhotos/SP-4-2.jpg',
+    url: '/spacePhotos/SP-1-2.jpg',
     id: 3,
     alt: 'Fotografia do Atelier - Espaço',
   },

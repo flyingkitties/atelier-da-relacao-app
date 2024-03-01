@@ -27,6 +27,9 @@ function Team() {
             'Membro da Sociedade Portuguesa de Psicologia Clínica (SPPC)',
             'Formação em Avaliação Psicológica da Criança e Adolescente',
             'Experiência em Necessidades Educativas Especiais em contexto escolar',
+            'Desenvolve prática clínica em consultório privado com crianças, adolescentes e jovens adultos',
+            'Integra equipa de Saúde Mental em Instituição na área da Infância e Juventude',
+            'Prática profissional em Acolhimento Residencial com crianças e jovens',
           ]}
         />
         {/* Vitor */}
@@ -40,6 +43,9 @@ function Team() {
             'Membro da Sociedade Portuguesa de Psicologia Clínica (SPPC)',
             'Pós-Graduação em Psicologia do Desperto e Atividade Física, no ISPA',
             'Experiência em contexto de Unidade de Saúde Familiar e Hospitalar',
+            'A exercer trabalho clínico em consultório privado com crianças, adolescentes e adultos',
+            'A trabalhar numa ONG no apoio psicológico a pessoas vítimas de trauma',
+            'Prática profissional na área social na SCML',
           ]}
         />
       </div>

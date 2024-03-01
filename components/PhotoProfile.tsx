@@ -21,7 +21,7 @@ function PhotoProfile({ photo, name, profession, id, points }: ProfileProps) {
 
       <div
         className="px-2 md:px-5 -mt-5 z-20 bg-white 
-      w-full shadow-lg max-w-64 sm:max-w-72 md:max-w-80 lg:max-w-96 mx-5 h-full"
+      w-full shadow-lg max-[320px]:max-w-64 max-w-72 sm:max-w-96  mx-5 h-full"
       >
         {/* Title */}
         <div className="TeamInfo-container z-10 ">

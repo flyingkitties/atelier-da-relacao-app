@@ -78,7 +78,7 @@ function FormAppointments() {
   };
 
   return (
-    <div className="m-3 md:m-5 rounded-xl bg-gray-50 p-2 ">
+    <div className="mx-3 md:mx-5 mb-5 rounded-xl bg-gray-50 p-2 ">
       {/* form */}
       <form
         onSubmit={handleSubmit(onSubmit)}
