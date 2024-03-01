@@ -8,13 +8,10 @@ function Team() {
   return (
     <div className="section-container bg-white">
       {/* Title */}
-      <div className="flex items-center justify-center py-2 md:py-5 ">
+      <div className="title-container">
         <h2 className="sectionTitle">Equipa</h2>
       </div>
-      <div
-        className="flex flex-col lg:grid grid-cols-2 py-16 space-y-10 
-      lg:space-y-0 items-center justify-items-center"
-      >
+      <div className="team-container">
         {/* Filipa */}
         <PhotoProfile
           photo={filipa}

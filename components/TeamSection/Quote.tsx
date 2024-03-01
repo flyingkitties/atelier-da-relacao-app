@@ -4,12 +4,12 @@ import { RiDoubleQuotesR } from 'react-icons/ri';
 
 function Quote() {
   return (
-    <div className=" section-container py-10 text-center bg-greenColor">
-      <div className="relative border-2 border-greenColor rounded-lg p-5 bg-white">
+    <div className="section-container py-10 text-center bg-greenColor">
+      <div className="quoteContainer">
         <div>
-          <RiDoubleQuotesL className="quoteIcon text-greenColor" />
+          <RiDoubleQuotesL className="quoteIcon" />
         </div>
-        <div className="quote-container">
+        <div className="quoteTextBox">
           <p className="italic font-semibold text-sm md:text-base leading-7">
             &quot;O que importa agora é fornecer a compreensão e o complemento
             que faltaram (ao paciente) - para que o desenvolvimento e a saúde, a
@@ -20,9 +20,9 @@ function Quote() {
           </p>
         </div>
         <div className="flex justify-end">
-          <RiDoubleQuotesR className="quoteIcon text-greenColor" />
+          <RiDoubleQuotesR className="quoteIcon" />
         </div>
-        <div className="absolute -bottom-3 -right-3 top-3 left-3 border-2 border-white rounded-md "></div>
+        <div className="outterBoxEffect"></div>
       </div>
     </div>
   );

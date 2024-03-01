@@ -1,11 +1,8 @@
 import Link from 'next/link';
 import React from 'react';
-import { FaInstagram } from 'react-icons/fa';
-import { RiFacebookCircleLine } from 'react-icons/ri';
 import { SlLocationPin } from 'react-icons/sl';
 import logo from '@/public/Logo-white.png';
 import Image from 'next/image';
-import { PiHouseLine } from 'react-icons/pi';
 import { BsTelephone } from 'react-icons/bs';
 import { IoTimeOutline } from 'react-icons/io5';
 import { MdOutlineMailOutline } from 'react-icons/md';
@@ -14,80 +11,78 @@ import { CiInstagram } from 'react-icons/ci';
 
 function Footer() {
   return (
-    <div>
-      <div className="relative top-16 pt-10 bg-darkGreenColor text-white text-xs ">
-        {/* Contact info */}
-        <div className="flex flex-col lg:grid grid-cols-2 items-center justify-center md:px-[10%] 2xl:px-[20%]">
-          <div className="px-20 lg:px-0">
-            <Image
-              className="w-full h-auto lg:h-full lg:w-auto"
-              src={logo}
-              alt="Atelier da relação Logo"
-            />
+    <div className="footer-container">
+      {/* Contact info */}
+      <div className="contactInfoBox">
+        <div className="px-20 lg:px-0">
+          <Image
+            className="w-full h-auto lg:h-full lg:w-auto"
+            src={logo}
+            alt="Atelier da relação Logo"
+          />
+        </div>
+        <div className="contactsBox">
+          {/* Hora de atendimento */}
+          <div className="contact">
+            <IoTimeOutline className="footerIconMed" />
+            <p>Segunda a Sexta das 09:00-21:30</p>
+            <p>-{'  '}Sábado das 09:00-13:00</p>
           </div>
-          <div className="flex flex-col items-start justify-start  space-y-3 px-5 pb-3">
-            {/* Hora de atendimento */}
-            <div className="contactInfoDiv">
-              <IoTimeOutline className="h-5 w-5 xl:h-7 xl:w-7 text-gray-100" />
-              <p>Segunda a Sexta das 09:00-21:30</p>
-              <p>Sábado das 09:00-13:00</p>
-            </div>
-            {/* Telefone */}
-            <div className="contactInfoDiv">
-              <BsTelephone className="h-4 w-4 xl:h-6 xl:w-6 text-gray-100" />
-              <p>+351 916 763 987</p>
-            </div>
-            <div className="contactInfoDiv">
-              <BsTelephone className="h-4 w-4 xl:h-6 xl:w-6 text-gray-100" />
-              <p>+351 916 356 283</p>
-            </div>
-            {/* Morada */}
-            <div className="contactInfoDiv">
-              <SlLocationPin className="h-5 w-5 xl:h-7 xl:w-7 text-gray-100" />
-              <p>Rua Francisco de Holanda, Nº22, R/C Direito. Lisboa</p>
-            </div>
-            {/* Email */}
-            <div className="contactInfoDiv">
-              <MdOutlineMailOutline className="h-5 w-5 xl:h-7 xl:w-7 text-gray-100" />
-              <p>atelier.relacao@gmail.com</p>
-            </div>
+          {/* Telefone */}
+          <div className="contact">
+            <BsTelephone className="footerIcon1Small" />
+            <p>+351 916 763 987</p>
+          </div>
+          <div className="contact">
+            <BsTelephone className="footerIcon1Small" />
+            <p>+351 916 356 283</p>
+          </div>
+          {/* Morada */}
+          <div className="contact">
+            <SlLocationPin className="footerIconMed" />
+            <p>Rua Francisco de Holanda, Nº22, R/C Direito. Lisboa</p>
+          </div>
+          {/* Email */}
+          <div className="contact">
+            <MdOutlineMailOutline className="footerIconMed" />
+            <p>atelier.relacao@gmail.com</p>
           </div>
         </div>
-        <div className="flex items-center justify-center py-5">
-          {/* Socials */}
-          <nav className="flex items-center justify-center space-x-5">
-            <Link
-              href="https://www.facebook.com/atelierdarelacao"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="p-[3px] bg-gray-100 rounded-full"
-            >
-              <CiFacebook className="h-6 w-6 xl:h-8 xl:w-8 text-darkGreenColor" />
-            </Link>
-            <Link
-              href="https://www.instagram.com/atelierdarelacao"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="p-[3px] bg-gray-100 rounded-full"
-            >
-              <CiInstagram className="h-6 w-6 xl:h-8 xl:w-8 text-darkGreenColor" />
-            </Link>
-          </nav>
-        </div>
-        {/* Terms and privacy */}
-        <div className="flex justify-center p-5 text-xs px-5 md:px-[10%] 2xl:px-[20%] space-x-2">
-          <Link href="/termos-e-condicoes">
-            <p className="sm:px-5">Termos e Condições</p>
+      </div>
+      <div className="flex items-center justify-center py-5">
+        {/* Socials */}
+        <nav className="flex items-center justify-center space-x-5">
+          <Link
+            href="https://www.facebook.com/atelierdarelacao"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="socialsRing"
+          >
+            <CiFacebook className="footerSocials" />
           </Link>
-          <p>|</p>
-          <Link href="/politica-de-privacidade">
-            <p className="sm:px-5">Política de Privacidade</p>
+          <Link
+            href="https://www.instagram.com/atelierdarelacao"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="socialsRing"
+          >
+            <CiInstagram className="footerSocials" />
           </Link>
-        </div>
-        {/* Copyright */}
-        <div className="flex justify-center items-center px-5 text-[9px] border-t-[0.4px] border-gray-400 py-5">
-          <p>Copyright © 2024 Atelier da Relação</p>
-        </div>
+        </nav>
+      </div>
+      {/* Terms and privacy */}
+      <div className="termsAndprivacyBox">
+        <Link href="/termos-e-condicoes">
+          <p className="sm:px-5">Termos e Condições</p>
+        </Link>
+        <p>|</p>
+        <Link href="/politica-de-privacidade">
+          <p className="sm:px-5">Política de Privacidade</p>
+        </Link>
+      </div>
+      {/* Copyright */}
+      <div className="copyright">
+        <p>Copyright © 2024 Atelier da Relação</p>
       </div>
     </div>
   );

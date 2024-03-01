@@ -1,35 +1,16 @@
 'use client';
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import TextField from '@mui/material/TextField';
 import MenuItem from '@mui/material/MenuItem';
-import { useForm, SubmitHandler, Controller } from 'react-hook-form';
-import { Inputs, TemplateParams } from '../Props';
+import { useForm, Controller } from 'react-hook-form';
+import { Inputs } from '../Props';
 import { FormControl } from '@mui/material';
 import emailjs from '@emailjs/browser';
 import { toast, ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-import { motion } from 'framer-motion';
 
 function FormAppointments() {
-  const options = [
-    {
-      value: 'Consulta de Psicologia e Psicoterapia de Crianças',
-      label: 'Consulta de Crianças',
-    },
-    {
-      value: 'Consulta de Psicologia e Psicoterapia de Adolescentes',
-      label: 'Consulta de Adolescentes',
-    },
-    {
-      value: 'Consulta de Psicologia e Psicoterapia de Adultos',
-      label: 'Consulta de Adultos',
-    },
-    {
-      value: 'Avaliação Psicológica',
-      label: 'Avaliação Psicológica',
-    },
-  ];
-
+  // React Hook From with default Values
   const {
     register,
     control,
@@ -47,6 +28,7 @@ function FormAppointments() {
     },
   });
 
+  // Submit form
   const onSubmit = (formData: Inputs) => {
     const templateParams = {
       from_name: formData.name,
@@ -94,9 +76,9 @@ function FormAppointments() {
               fontSize: '0.8rem',
             },
             '@media (min-width: 768px)': {
-              // Adjust the breakpoint according to your medium screen size
+              // Adjust for med size screen
               '& .MuiFormLabel-root': {
-                fontSize: '1rem', // Set the desired font size for medium screens
+                fontSize: '1rem',
               },
             },
           }}
@@ -181,3 +163,22 @@ function FormAppointments() {
 }
 
 export default FormAppointments;
+
+const options = [
+  {
+    value: 'Consulta de Psicologia e Psicoterapia de Crianças',
+    label: 'Consulta de Crianças',
+  },
+  {
+    value: 'Consulta de Psicologia e Psicoterapia de Adolescentes',
+    label: 'Consulta de Adolescentes',
+  },
+  {
+    value: 'Consulta de Psicologia e Psicoterapia de Adultos',
+    label: 'Consulta de Adultos',
+  },
+  {
+    value: 'Avaliação Psicológica',
+    label: 'Avaliação Psicológica',
+  },
+];
