@@ -11,7 +11,7 @@ const libreFranklin = Libre_Franklin({
   variable: '--font-libre-franklin',
 });
 const myFont = localFont({
-  src: './my-font.woff2',
+  src: './my-font.woff',
   // display: 'swap',
   variable: '--font-gistesy',
 });

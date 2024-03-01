@@ -3,7 +3,7 @@ import React, { useEffect, useState } from 'react';
 import TextField from '@mui/material/TextField';
 import MenuItem from '@mui/material/MenuItem';
 import { useForm, SubmitHandler, Controller } from 'react-hook-form';
-import { Inputs, TemplateParams } from './Props';
+import { Inputs, TemplateParams } from '../Props';
 import { FormControl } from '@mui/material';
 import emailjs from '@emailjs/browser';
 import { toast, ToastContainer } from 'react-toastify';

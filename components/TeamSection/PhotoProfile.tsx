@@ -2,7 +2,7 @@ import React from 'react';
 import { TiSpiral } from 'react-icons/ti';
 
 import Image from 'next/image';
-import { ProfileProps } from './Props';
+import { ProfileProps } from '../Props';
 
 function PhotoProfile({ photo, name, profession, id, points }: ProfileProps) {
   return (

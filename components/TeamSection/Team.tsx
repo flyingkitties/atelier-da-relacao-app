@@ -1,9 +1,8 @@
-import Image from 'next/image';
 import React from 'react';
-import vitor from '../public/Vitor.png';
-import PhotoProfile from './PhotoProfile';
-import filipa from '../public/Filipa.png';
+import vitor from '../../public/teamPhotos/Vitor.png';
+import filipa from '../../public/teamPhotos/Filipa.png';
 import Quote from './Quote';
+import PhotoProfile from './PhotoProfile';
 
 function Team() {
   return (

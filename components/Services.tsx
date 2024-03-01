@@ -1,10 +1,10 @@
 'use client';
 import React, { useRef } from 'react';
 import Image from 'next/image';
-import icon1 from '@/public/Icon1.png';
-import icon3 from '@/public/Icon3.png';
-import icon4 from '@/public/Icon4.png';
-import icon5 from '@/public/Icon5.png';
+import icon1 from '@/public/servicesIcons/Icon1.png';
+import icon3 from '@/public/servicesIcons/Icon3.png';
+import icon4 from '@/public/servicesIcons/Icon4.png';
+import icon5 from '@/public/servicesIcons/Icon5.png';
 import { motion, useInView } from 'framer-motion';
 
 function Section({ children }: { children: any }): React.JSX.Element {

@@ -16,6 +16,11 @@
   .TermsContainer {
     @apply pb-16 pt-20 px-5 md:px-[10%] font-franklin;
   }
+  /* Nav */
+  .navHeader {
+    @apply flex flex-wrap justify-center gap-3 px-5 py-5;
+  }
+
   /* Buttons */
   .button1 {
     @apply border-2 border-greenColor hover:bg-darkGreenColor hover:border-darkGreenColor hover:text-white rounded-3xl py-1 px-3 sm:px-5 text-xs sm:text-sm lg:text-base tracking-wide;
