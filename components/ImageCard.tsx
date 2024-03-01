@@ -1,4 +1,4 @@
-import React, { useRef } from 'react';
+import React from 'react';
 import { motion, Variants } from 'framer-motion';
 import { CardProps } from './Props';
 
