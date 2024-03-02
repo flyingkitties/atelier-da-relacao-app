@@ -1,7 +1,9 @@
+'use client';
 import React from 'react';
 import { TiSpiral } from 'react-icons/ti';
 import Image from 'next/image';
 import { ProfileProps } from '../Props';
+import { motion } from 'framer-motion';
 
 function PhotoProfile({ photo, name, profession, id, points }: ProfileProps) {
   return (
@@ -18,10 +20,19 @@ function PhotoProfile({ photo, name, profession, id, points }: ProfileProps) {
         ></div>
       </div>
 
-      <div
+      <motion.div
         className="px-2 md:px-5 -mt-5 z-20 bg-white 
       w-full shadow-lg max-[320px]:max-w-64 max-w-72 sm:max-w-96 
        mx-5 h-full"
+        initial={{
+          y: 15,
+        }}
+        whileInView={{ y: 0 }}
+        transition={{
+          duration: 1,
+          delay: 0.5,
+        }}
+        viewport={{ once: true }}
       >
         {/* Title */}
         <div className="teamInfo-container z-10 ">
@@ -40,7 +51,7 @@ function PhotoProfile({ photo, name, profession, id, points }: ProfileProps) {
             </li>
           ))}
         </ul>
-      </div>
+      </motion.div>
     </div>
   );
 }

@@ -13,9 +13,12 @@ function Appointments() {
           className="grid grid-row w-full rounded-xl
        bg-gray-50 shadow-lg my-[3%] md:my-[5%] max-w-xl"
         >
-          {/* info for appointments */}
-          <div className="m-3 md:m-5 mt-10 p-3 text-center">
-            <h3>
+          {/* Form */}
+          <div className="m-3 md:m-5 md:mt-10 p-3 pb-0 text-center">
+            <h2 className="max-[320px]:text-base text-lg lg:text-xl xl:text-2xl font-bold mb-5">
+              Entre em contacto conosco
+            </h2>
+            <h3 className="teamJob font-light">
               Preencha o formulário e entraremos em contacto consigo para
               agendamento da sua consulta ou para esclarecimento de
               questões/pedido de informação
