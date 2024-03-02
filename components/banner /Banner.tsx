@@ -11,7 +11,7 @@ function Banner() {
         <LogoSvg />
         <div>
           <h1 className="LogoTitle1">Atelier da Relação</h1>
-          <h2 className="logoTitle2">Psicologia Clínica e Psicoterapia</h2>
+          <h2 className="logoTitle2">Psicologia Clinica e Psicoterapia</h2>
         </div>
       </div>
 
