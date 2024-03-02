@@ -154,7 +154,7 @@ function FormAppointments() {
             type="submit"
             className="bg-darkGreenColor my-3 py-3 rounded-lg text-white font-bold hover:bg-darkGreenColor/80"
           >
-            Submit
+            Enviar
           </button>
         </FormControl>
       </form>
