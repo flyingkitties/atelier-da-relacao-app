@@ -12,7 +12,7 @@ function AboutUs() {
       </div>
 
       {/* text */}
-      <div className="space-y-5 py-[8%] md:py-[5%] text-justify text-xs sm:text-sm lg:text-base xl:text-lg ">
+      <div className="space-y-5 py-[8%] md:py-[5%] text-justify hyphens-auto text-xs sm:text-sm lg:text-base xl:text-lg ">
         {/* section 1 */}
         <div className="groupSection-container">
           <div className="aboutUsText">
