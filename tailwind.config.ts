@@ -10,6 +10,15 @@ const config: Config = {
     fontFamily: {
       franklin: ['var(--font-libre-franklin)'],
       gistesy: ['var(--font-gistesy)'],
+      // dancingScript: ['var(--font-dancing-script)'],
+      // sacramento: ['var(--font-sacramento)'],
+      // allura: ['var(--font-allura)'],
+      // saint: ['var(--font-saint-delafield)'],
+      // von: ['var(--font-von-muellerhoff)'],
+      // allison: ['var(--font-allison)'],
+      // madi: ['var(--font-madi)'],
+      // qwigley: ['var(--font-qwigley)'],
+      // fuggles: ['var(--font-fuggles)'],
     },
     extend: {
       colors: {

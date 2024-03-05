@@ -42,8 +42,8 @@ function PhotoProfile({ photo, name, profession, id, points }: ProfileProps) {
         </div>
         {/* description */}
         <ul className="text-[10px] sm:text-xs space-y-3 py-5 team">
-          {points.map((point) => (
-            <li key={name}>
+          {points.map((point, i) => (
+            <li key={i}>
               <div>
                 <TiSpiral className="text-greenColor w-3 h-3" />
               </div>

@@ -25,7 +25,7 @@ function LogoSvg(props: SVGMotionProps<SVGSVGElement>) {
 
   return (
     <motion.svg
-      className="max-w-48 md:max-w-52 lg:max-w-58 xl:max-w-64 h-auto"
+      className="max-w-40 md:max-w-48 lg:max-w-56 xl:max-w-64 h-auto"
       initial="hidden"
       animate="visible"
       xmlns="http://www.w3.org/2000/svg"

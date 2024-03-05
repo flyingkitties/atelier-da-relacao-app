@@ -4,7 +4,7 @@ import { RiDoubleQuotesR } from 'react-icons/ri';
 
 function Quote() {
   return (
-    <div className="section-container py-10 text-center bg-greenColor">
+    <div className="section-container p-10 text-center bg-greenColor">
       <div className="quoteContainer">
         <div>
           <RiDoubleQuotesL className="quoteIcon" />

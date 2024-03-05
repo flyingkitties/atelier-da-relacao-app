@@ -57,6 +57,7 @@ function Footer() {
             target="_blank"
             rel="noopener noreferrer"
             className="socialsRing"
+            aria-label="o nosso facebook"
           >
             <CiFacebook className="footerSocials" />
           </Link>
@@ -65,6 +66,7 @@ function Footer() {
             target="_blank"
             rel="noopener noreferrer"
             className="socialsRing"
+            aria-label="o nosso instagram"
           >
             <CiInstagram className="footerSocials" />
           </Link>

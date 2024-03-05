@@ -19,13 +19,13 @@ function ImageCard({ card }: { card: CardProps }) {
     >
       <div
         key={card.id}
-        className="group relative h-56 md:h-80 lg:h-full w-full overflow-hidden rounded-lg z-10 shadow-md"
+        className="group relative h-56 sm:h-72 md:h-80 lg:h-full lg:min-h-72 w-full overflow-hidden rounded-lg z-10 shadow-md"
       >
         <div
           style={{
             backgroundImage: `url(${card.url})`,
             backgroundSize: 'cover',
-            backgroundPosition: 'center',
+            backgroundPosition: 'bottom center',
           }}
           className="absolute inset-0 z-0 transition-transform duration-300 group-hover:scale-110"
         ></div>

@@ -106,17 +106,17 @@ export default AboutUs;
 
 const cards: CardProps[] = [
   {
-    url: '/spacePhotos/SP-2-6.jpg',
+    url: '/spacePhotos/SP-5.avif',
     id: 1,
     alt: 'Fotografia do Atelier - cadeiras e mesa',
   },
   {
-    url: '/spacePhotos/SP-3.jpeg',
+    url: '/spacePhotos/SP-6.avif',
     id: 2,
     alt: 'Fotografia do Atelier - Espaço',
   },
   {
-    url: '/spacePhotos/SP-1-2.jpg',
+    url: '/spacePhotos/SP-7.avif',
     id: 3,
     alt: 'Fotografia do Atelier - Espaço',
   },
