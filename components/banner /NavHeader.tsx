@@ -21,7 +21,7 @@ function NavHeader() {
       </button>
 
       <button
-        className="button1"
+        className="button1 "
         onClick={(e) => {
           scrollSmooth(e, 'services');
         }}

@@ -24,7 +24,7 @@
   }
   /* Buttons */
   .button1 {
-    @apply border-2 border-greenColor hover:bg-darkGreenColor hover:border-darkGreenColor hover:text-white rounded-3xl py-1 px-3 sm:px-5 text-xs sm:text-sm lg:text-base tracking-wide;
+    @apply capitalize border-2 border-greenColor hover:bg-darkGreenColor hover:border-darkGreenColor hover:text-white rounded-3xl py-1 px-3 sm:px-5 text-xs sm:text-sm lg:text-base tracking-wide;
   }
   .button2 {
     @apply border-[3px] border-gray-100 hover:bg-white hover:border-darkGreenColor hover:text-darkGreenColor hover:shadow-xl rounded-3xl py-1 px-5 text-sm lg:text-base tracking-wide font-semibold shadow-md;
