@@ -6,7 +6,26 @@ import Team from '@/components/TeamSection/Team';
 import WhereWeAre from '@/components/WhereWeAre';
 import Appointments from '@/components/appointmentsSection/Appointments';
 import Footer from '@/components/Footer';
+import dynamic from 'next/dynamic';
 
+const DynamicServices = dynamic(() => import('../components/Services'), {
+  loading: () => <p>Loading...</p>,
+});
+const DynamicTeam = dynamic(() => import('../components/TeamSection/Team'), {
+  loading: () => <p>Loading...</p>,
+});
+const DynamicAppointments = dynamic(
+  () => import('../components/appointmentsSection/Appointments'),
+  {
+    loading: () => <p>Loading...</p>,
+  },
+);
+const DynamicWhereWeAre = dynamic(() => import('../components/WhereWeAre'), {
+  loading: () => <p>Loading...</p>,
+});
+const DynamicFooter = dynamic(() => import('../components/Footer'), {
+  loading: () => <p>Loading...</p>,
+});
 export default function Home() {
   return (
     <main>
@@ -16,18 +35,18 @@ export default function Home() {
         <AboutUs />
       </section>
       <section id="services">
-        <Services />
+        <DynamicServices />
       </section>
       <section id="team">
-        <Team />
+        <DynamicTeam />
       </section>
       <section id="appointments">
-        <Appointments />
+        <DynamicAppointments />
       </section>
       <section id="location">
-        <WhereWeAre />
+        <DynamicWhereWeAre />
       </section>
-      <Footer />
+      <DynamicFooter />
     </main>
   );
 }
