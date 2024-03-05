@@ -2,6 +2,7 @@
 import React from 'react';
 import LogoSvg from './LogoSvg';
 import NavHeader from './NavHeader';
+import Image from 'next/image';
 
 function Banner() {
   return (
@@ -19,15 +20,39 @@ function Banner() {
         <div
           className="wave "
           id="wave1"
-        ></div>
+        >
+          <Image
+            src="/public/wave.png"
+            alt=""
+            width="0"
+            height="0"
+            style={{ display: 'none!important' }}
+          />
+        </div>
         <div
           className="wave"
           id="wave2"
-        ></div>
+        >
+          <Image
+            src="/public/wave.png"
+            alt=""
+            width="0"
+            height="0"
+            style={{ display: 'none!important' }}
+          />
+        </div>
         <div
           className="wave"
           id="wave3"
-        ></div>
+        >
+          <Image
+            src="/public/wave.png"
+            alt=""
+            width="0"
+            height="0"
+            style={{ display: 'none!important' }}
+          />
+        </div>
       </section>
     </div>
   );
