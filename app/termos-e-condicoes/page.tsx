@@ -30,7 +30,7 @@ function page() {
             </p>
           </div>
           <div className="aboutUsText">
-            <h2 className="font-bold text-base">Cookies:</h2>
+            <h2 className="font-bold text-base lg:text-lg">Cookies:</h2>
             <p>
               O site usa cookies para ajudar a personalizar a sua experiência
               online. Ao aceder Atelier da Relação - Psicologia Clínica e
@@ -57,7 +57,7 @@ function page() {
             </p>
           </div>
           <div className="aboutUsText">
-            <h2 className="font-bold text-base">Licença:</h2>
+            <h2 className="font-bold text-base lg:text-lg">Licença:</h2>
             <p>
               Salvo indicação em contrário, Atelier da Relação - Psicologia
               Clínica e Psicoterapia e/ou os seus licenciados possuem os
@@ -137,7 +137,7 @@ function page() {
             </p>
           </div>
           <div className="aboutUsText">
-            <h2 className="font-bold text-base">
+            <h2 className="font-bold text-base lg:text-lg">
               Hiperlinks para o nosso conteúdo:
             </h2>
             <p>
@@ -237,7 +237,7 @@ function page() {
             </p>
           </div>
           <div className="aboutUsText">
-            <h2 className="font-bold text-base">
+            <h2 className="font-bold text-base lg:text-lg">
               Responsabilidade pelo conteúdo:
             </h2>
             <p>
@@ -250,7 +250,9 @@ function page() {
             </p>
           </div>
           <div className="aboutUsText">
-            <h2 className="font-bold text-base">Reserva de direitos:</h2>
+            <h2 className="font-bold text-base lg:text-lg">
+              Reserva de direitos:
+            </h2>
             <p>
               Reservamos o direito de solicitar que remova todos os links ou
               qualquer link específico para o nosso site. Aprova a remoção
@@ -262,7 +264,7 @@ function page() {
             </p>
           </div>
           <div className="aboutUsText">
-            <h2 className="font-bold text-base">
+            <h2 className="font-bold text-base lg:text-lg">
               Remoção de links do nosso site:
             </h2>
             <p>
@@ -279,7 +281,7 @@ function page() {
             </p>
           </div>
           <div className="aboutUsText">
-            <h2 className="font-bold text-base">
+            <h2 className="font-bold text-base lg:text-lg">
               Isenção de responsabilidade:
             </h2>
             <p>

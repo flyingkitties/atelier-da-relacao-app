@@ -31,7 +31,7 @@ function page() {
             </p>
           </div>
           <div className="aboutUsText">
-            <h2 className="font-bold text-base">
+            <h2 className="font-bold text-base lg:text-lg">
               Informações pessoais que recolhemos:
             </h2>
             <p>
@@ -50,7 +50,7 @@ function page() {
             </p>
           </div>
           <div className="aboutUsText">
-            <h2 className="font-bold text-base">
+            <h2 className="font-bold text-base lg:text-lg">
               Porque processamos os seus dados?
             </h2>
             <p>
@@ -80,7 +80,9 @@ function page() {
             </p>
           </div>
           <div className="aboutUsText">
-            <h2 className="font-bold text-base">Os seus direitos:</h2>
+            <h2 className="font-bold text-base lg:text-lg">
+              Os seus direitos:
+            </h2>
             <p>
               Se é um residente europeu, tem os seguintes direitos relacionados
               aos seus dados pessoais:
@@ -113,7 +115,9 @@ function page() {
             </p>
           </div>
           <div className="aboutUsText">
-            <h2 className="font-bold text-base">Links para outros sites:</h2>
+            <h2 className="font-bold text-base lg:text-lg">
+              Links para outros sites:
+            </h2>
             <p>
               O nosso site pode conter links para outros sites que não são de
               nossa propriedade ou controlados por nós. Esteja ciente de que não
@@ -124,7 +128,9 @@ function page() {
             </p>
           </div>
           <div className="aboutUsText">
-            <h2 className="font-bold text-base">Segurança da informação:</h2>
+            <h2 className="font-bold text-base lg:text-lg">
+              Segurança da informação:
+            </h2>
             <p>
               Protegemos as informações que nos fornece nos servidores de
               computador num ambiente controlado e seguro, protegido contra
@@ -137,7 +143,9 @@ function page() {
             </p>
           </div>
           <div className="aboutUsText">
-            <h2 className="font-bold text-base">Divulgação legal:</h2>
+            <h2 className="font-bold text-base lg:text-lg">
+              Divulgação legal:
+            </h2>
             <p>
               Divulgaremos todas as informações que recolhermos, usarmos ou
               recebermos se exigido ou permitido por lei, como para cumprir uma
@@ -148,7 +156,9 @@ function page() {
             </p>
           </div>
           <div className="aboutUsText">
-            <h2 className="font-bold text-base">Informações de contacto:</h2>
+            <h2 className="font-bold text-base lg:text-lg">
+              Informações de contacto:
+            </h2>
             <p>
               Se desejar entrar em contacto conosco para entender mais sobre
               esta Política ou se quiser falar sobre qualquer assunto
