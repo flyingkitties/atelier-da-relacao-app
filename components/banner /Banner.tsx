@@ -14,14 +14,6 @@ function Banner() {
           <h1 className="LogoTitle1">Atelier da Relação</h1>
           <h2 className="logoTitle2">Psicologia Clinica e Psicoterapia</h2>
         </div>
-        <button
-          type="button"
-          onClick={() => {
-            throw new Error('Sentry Frontend Error');
-          }}
-        >
-          Throw error
-        </button>
       </div>
 
       <section>
