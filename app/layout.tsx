@@ -1,4 +1,6 @@
 import type { Metadata } from 'next';
+import { Suspense } from 'react';
+import { FacebookPixelEvents } from '../components/pixel-events';
 import {
   Allison,
   Allura,
@@ -97,6 +99,9 @@ export default function RootLayout({
     >
       <body className={inter.className}>
         {children}
+        <Suspense fallback={null}>
+          <FacebookPixelEvents />
+        </Suspense>
         <SpeedInsights />
         <Analytics debug={false} />
       </body>
