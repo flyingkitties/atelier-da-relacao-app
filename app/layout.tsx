@@ -24,7 +24,7 @@ const myFont = localFont({
 export const metadata: Metadata = {
   title: 'Atelier da Relação',
   description:
-    ' Atelier da Relação - Consulta de Psicologia e Psicoterapia de Crianças - Consulta de Psicologia e Psicoterapia de Adolescentes - Consulta de Psicologia e Psicoterapia de Adultos - Avaliação Psicológica - Lisboa - atelier da relacao',
+    'Atelier da Relação - Consulta de Psicologia e Psicoterapia de Crianças - Consulta de Psicologia e Psicoterapia de Adolescentes - Consulta de Psicologia e Psicoterapia de Adultos - Avaliação Psicológica - Lisboa - atelier da relacao',
 };
 
 export default function RootLayout({
@@ -38,8 +38,8 @@ export default function RootLayout({
       className={`${libreFranklin.variable} ${myFont.variable}`}
     >
       <head>
-        {/* <Script
-          id="GoogleTechManager"
+        <Script
+          id="GoogleTagManager"
           strategy="afterInteractive"
           dangerouslySetInnerHTML={{
             __html: `(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
@@ -48,7 +48,7 @@ export default function RootLayout({
   'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
   })(window,document,'script','dataLayer','GTM-5PR8TRDX');`,
           }}
-        /> */}
+        />
       </head>
       <body className={inter.className}>
         {children}
