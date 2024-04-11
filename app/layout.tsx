@@ -1,23 +1,12 @@
 import type { Metadata } from 'next';
 import { Suspense } from 'react';
-import { FacebookPixelEvents } from '../components/pixel-events';
-import {
-  Allison,
-  Allura,
-  Dancing_Script,
-  Fuggles,
-  Herr_Von_Muellerhoff,
-  Inter,
-  Libre_Franklin,
-  Mrs_Saint_Delafield,
-  Ms_Madi,
-  Qwigley,
-  Sacramento,
-} from 'next/font/google';
+import { Inter, Libre_Franklin } from 'next/font/google';
 import localFont from 'next/font/local';
 import './globals.css';
 import { SpeedInsights } from '@vercel/speed-insights/react';
 import { Analytics } from '@vercel/analytics/react';
+import FacebookPixel from '@/components/FacebookPixel';
+import Script from 'next/script';
 
 const inter = Inter({ subsets: ['latin'] });
 const libreFranklin = Libre_Franklin({
@@ -26,55 +15,6 @@ const libreFranklin = Libre_Franklin({
   variable: '--font-libre-franklin',
 });
 
-// const dancingScript = Dancing_Script({
-//   subsets: ['latin'],
-//   variable: '--font-dancing-script',
-// });
-
-// const allura = Allura({
-//   subsets: ['latin'],
-//   display: 'swap',
-//   weight: '400',
-//   variable: '--font-allura',
-// });
-
-// const saint = Mrs_Saint_Delafield({
-//   subsets: ['latin'],
-//   display: 'swap',
-//   weight: '400',
-//   variable: '--font-saint-delafield',
-// });
-
-// const von = Herr_Von_Muellerhoff({
-//   subsets: ['latin'],
-//   display: 'swap',
-//   weight: '400',
-//   variable: '--font-von-muellerhoff',
-// });
-// const allison = Allison({
-//   subsets: ['latin'],
-//   display: 'swap',
-//   weight: '400',
-//   variable: '--font-allison',
-// });
-// const madi = Ms_Madi({
-//   subsets: ['latin'],
-//   display: 'swap',
-//   weight: '400',
-//   variable: '--font-madi',
-// });
-// const qwigley = Qwigley({
-//   subsets: ['latin'],
-//   display: 'swap',
-//   weight: '400',
-//   variable: '--font-qwigley',
-// });
-// const fuggles = Fuggles({
-//   subsets: ['latin'],
-//   display: 'swap',
-//   weight: '400',
-//   variable: '--font-fuggles',
-// });
 const myFont = localFont({
   src: './Gistesy.woff',
   display: 'swap',
@@ -97,11 +37,22 @@ export default function RootLayout({
       lang="en"
       className={`${libreFranklin.variable} ${myFont.variable}`}
     >
+      <head>
+        {/* <Script
+          id="GoogleTechManager"
+          strategy="afterInteractive"
+          dangerouslySetInnerHTML={{
+            __html: `(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-5PR8TRDX');`,
+          }}
+        /> */}
+      </head>
       <body className={inter.className}>
         {children}
-        <Suspense fallback={null}>
-          <FacebookPixelEvents />
-        </Suspense>
+        <FacebookPixel />
         <SpeedInsights />
         <Analytics debug={false} />
       </body>
