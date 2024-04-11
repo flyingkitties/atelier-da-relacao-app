@@ -33,10 +33,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html
-      lang="en"
-      className={`${libreFranklin.variable} ${myFont.variable}`}
-    >
+    <html lang="en">
       <head>
         <Script
           id="Gtm"
@@ -50,7 +47,9 @@ export default function RootLayout({
           }}
         ></Script>
       </head>
-      <body className={inter.className}>
+      <body
+        className={`${inter.className} ${libreFranklin.variable} ${myFont.variable}`}
+      >
         {children}
         <FacebookPixel />
         <SpeedInsights />
