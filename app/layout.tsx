@@ -7,6 +7,7 @@ import { SpeedInsights } from '@vercel/speed-insights/react';
 import { Analytics } from '@vercel/analytics/react';
 import FacebookPixel from '@/components/FacebookPixel';
 import Script from 'next/script';
+import { GoogleAnalytics } from 'nextjs-google-analytics';
 
 const inter = Inter({ subsets: ['latin'] });
 const libreFranklin = Libre_Franklin({
@@ -52,6 +53,7 @@ export default function RootLayout({
       >
         {children}
         <FacebookPixel />
+        <GoogleAnalytics trackPageViews />
         <SpeedInsights />
         <Analytics debug={false} />
       </body>
