@@ -53,7 +53,10 @@ export default function RootLayout({
       >
         {children}
         <FacebookPixel />
-        <GoogleAnalytics trackPageViews />
+        <GoogleAnalytics
+          trackPageViews
+          gaMeasurementId={process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID}
+        />
         <SpeedInsights />
         <Analytics debug={false} />
       </body>
