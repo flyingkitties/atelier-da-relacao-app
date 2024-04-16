@@ -36,7 +36,7 @@ export default function RootLayout({
     <html lang="en">
       <head>
         <Script
-          id="Gtm"
+          id="gtm"
           strategy="afterInteractive"
           dangerouslySetInnerHTML={{
             __html: `(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
