@@ -56,10 +56,7 @@ export default function RootLayout({
         <SpeedInsights />
         <Analytics debug={false} />
       </body>
-      <GoogleAnalytics
-        trackPageViews
-        gaMeasurementId={process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID}
-      />
+      <GoogleAnalytics trackPageViews />
     </html>
   );
 }
