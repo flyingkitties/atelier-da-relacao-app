@@ -36,10 +36,6 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        <meta
-          name="google-site-verification"
-          content="BxVNKSc4oCsT8ySdMD4WlaFLUk-eV53wkgTsxkiPcx4"
-        />
         <Script
           id="gtm"
           strategy="afterInteractive"
@@ -51,6 +47,10 @@ export default function RootLayout({
             })(window,document,'script','dataLayer','GTM-5PR8TRDX');`,
           }}
         ></Script>
+        <meta
+          name="google-site-verification"
+          content="BxVNKSc4oCsT8ySdMD4WlaFLUk-eV53wkgTsxkiPcx4"
+        />
       </head>
       <body
         className={`${inter.className} ${libreFranklin.variable} ${myFont.variable}`}
