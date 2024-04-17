@@ -56,7 +56,7 @@ export default function RootLayout({
         <SpeedInsights />
         <Analytics debug={false} />
       </body>
-      <GoogleAnalytics trackPageViews />
+      {/* <GoogleAnalytics trackPageViews /> */}
     </html>
   );
 }
