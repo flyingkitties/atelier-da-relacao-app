@@ -26,6 +26,10 @@ export const metadata: Metadata = {
   title: 'Atelier da Relação',
   description:
     'Atelier da Relação - Consulta de Psicologia e Psicoterapia de Crianças - Consulta de Psicologia e Psicoterapia de Adolescentes - Consulta de Psicologia e Psicoterapia de Adultos - Avaliação Psicológica - Lisboa - atelier da relacao',
+  other: {
+    name: 'google-site-verification',
+    content: 'BxVNKSc4oCsT8ySdMD4WlaFLUk-eV53wkgTsxkiPcx4',
+  },
 };
 
 export default function RootLayout({
